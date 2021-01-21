@@ -32,6 +32,7 @@
           zoom: 8,
         });
       }
+
     </script>
   </head>
   <body>
