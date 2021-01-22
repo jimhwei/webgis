@@ -1,0 +1,38 @@
+[
+  {
+    "attributes": {
+      "OID": 1,
+      "Name": "Old Faithful Lodge",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Cafeteria, Gift Shop, and Cabin Front Desk",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.82552899999996,
+      "y": 44.459415000000035
+    }
+  },
+  {
+    "attributes": {
+      "OID": 2,
+      "Name": "Old Faithful Inn",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Largest log cabin structure.  Rooms, Dining, Bar, Gift Shop, Deck overlooking Old Faithful",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.83104399999996,
+      "y": 44.460127000000057
+    }
+  }
+]
