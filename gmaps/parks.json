@@ -1,0 +1,293 @@
+[
+  { "Name": "Aaron", "Latitude": "49.758123", "Longitude": "-92.65349" },
+  { "Name": "Algonquin", "Latitude": "45.442046", "Longitude": "-78.820583" },
+  {
+    "Name": "Arrow Lake",
+    "Latitude": "48.17812017",
+    "Longitude": "-90.22694426"
+  },
+  { "Name": "Arrowhead", "Latitude": "45.3915", "Longitude": "-79.214" },
+  { "Name": "Awenda", "Latitude": "44.843699", "Longitude": "-80.002699" },
+  { "Name": "Balsam Lake", "Latitude": "44.62555", "Longitude": "-78.85738" },
+  { "Name": "Bass Lake", "Latitude": "44.601", "Longitude": "-79.4829" },
+  { "Name": "Batchawana", "Latitude": "46.944168", "Longitude": "-84.551017" },
+  {
+    "Name": "Biscotasi Lake",
+    "Latitude": "47.352455",
+    "Longitude": "-81.997528"
+  },
+  { "Name": "Blue Lake", "Latitude": "49.904122", "Longitude": "-93.469178" },
+  { "Name": "Bon Echo", "Latitude": "44.8972", "Longitude": "-77.2095" },
+  { "Name": "Bonnechere", "Latitude": "45.65729", "Longitude": "-77.57886" },
+  { "Name": "Bronte Creek", "Latitude": "43.40684", "Longitude": "-79.76889" },
+  {
+    "Name": "Caliper Lake",
+    "Latitude": "49.068974",
+    "Longitude": "-93.904116"
+  },
+  {
+    "Name": "Charleston Lake",
+    "Latitude": "44.50176",
+    "Longitude": "-76.04133"
+  },
+  { "Name": "Chutes", "Latitude": "46.217628", "Longitude": "-82.070231" },
+  { "Name": "Craigleith", "Latitude": "44.53622", "Longitude": "-80.34897" },
+  { "Name": "Darlington", "Latitude": "43.8755", "Longitude": "-78.777834" },
+  { "Name": "Driftwood", "Latitude": "46.18", "Longitude": "-77.84" },
+  { "Name": "Earl Rowe", "Latitude": "44.150159", "Longitude": "-79.898905" },
+  { "Name": "Emily", "Latitude": "44.340451", "Longitude": "-78.53435" },
+  { "Name": "Esker Lakes", "Latitude": "48.281932", "Longitude": "-79.872539" },
+  { "Name": "Fairbank", "Latitude": "46.47", "Longitude": "-81.44" },
+  { "Name": "Ferris", "Latitude": "44.2908", "Longitude": "-77.7858" },
+  {
+    "Name": "Finlayson Point",
+    "Latitude": "47.054987",
+    "Longitude": "-79.804448"
+  },
+  { "Name": "Fitzroy", "Latitude": "45.482113", "Longitude": "-76.213731" },
+  {
+    "Name": "Forks of the Credit",
+    "Latitude": "43.81636964",
+    "Longitude": "-80.01141257"
+  },
+  {
+    "Name": "French River",
+    "Latitude": "46.018035",
+    "Longitude": "-80.583773"
+  },
+  { "Name": "Frontenac", "Latitude": "44.504167", "Longitude": "-76.555833" },
+  {
+    "Name": "Fushimi Lake",
+    "Latitude": "49.838087",
+    "Longitude": "-83.922523"
+  },
+  { "Name": "Grundy Lake", "Latitude": "45.91768", "Longitude": "-80.55927" },
+  { "Name": "Halfway Lake", "Latitude": "46.91", "Longitude": "-81.63" },
+  {
+    "Name": "Inverhuron",
+    "Latitude": "44.30039235",
+    "Longitude": "-81.57963959"
+  },
+  {
+    "Name": "Ivanhoe Lake",
+    "Latitude": "48.152309",
+    "Longitude": "-82.513872"
+  },
+  { "Name": "John E. Pearce", "Latitude": "42.605", "Longitude": "-81.4448" },
+  {
+    "Name": "Kakabeka Falls",
+    "Latitude": "48.404476",
+    "Longitude": "-89.62667"
+  },
+  {
+    "Name": "Kap-Kig-Iwan",
+    "Latitude": "47.8011908",
+    "Longitude": "-79.87924005"
+  },
+  {
+    "Name": "Kawartha Highlands",
+    "Latitude": "45.05499",
+    "Longitude": "-77.87313"
+  },
+  {
+    "Name": "Kettle Lakes",
+    "Latitude": "48.572301",
+    "Longitude": "-80.891863"
+  },
+  { "Name": "Killarney", "Latitude": "46.012567", "Longitude": "-81.401889" },
+  { "Name": "Killbear", "Latitude": "45.35886", "Longitude": "-80.21344" },
+  { "Name": "Komoka", "Latitude": "42.95044912", "Longitude": "-81.39506607" },
+  {
+    "Name": "Lady Evelyn-Smoothwater",
+    "Latitude": "47.386069",
+    "Longitude": "-80.529034"
+  },
+  {
+    "Name": "Lake St. Peter",
+    "Latitude": "45.319828",
+    "Longitude": "-78.023067"
+  },
+  {
+    "Name": "Lake Superior",
+    "Latitude": "47.722989",
+    "Longitude": "-84.811803"
+  },
+  {
+    "Name": "Lake on the Mountain",
+    "Latitude": "44.039956",
+    "Longitude": "-77.056496"
+  },
+  { "Name": "Long Point", "Latitude": "42.5834", "Longitude": "-80.3829" },
+  {
+    "Name": "MacGregor Point",
+    "Latitude": "44.408899",
+    "Longitude": "-81.446512"
+  },
+  { "Name": "MacLeod", "Latitude": "49.690468", "Longitude": "-86.902049" },
+  {
+    "Name": "Makobe-Grays River",
+    "Latitude": "47.597126",
+    "Longitude": "-80.374851"
+  },
+  { "Name": "Mara", "Latitude": "44.586034", "Longitude": "-79.360174" },
+  {
+    "Name": "Mark S. Burnham",
+    "Latitude": "44.296983",
+    "Longitude": "-78.270292"
+  },
+  {
+    "Name": "Marten River",
+    "Latitude": "46.733831",
+    "Longitude": "-79.803357"
+  },
+  { "Name": "McRae Point", "Latitude": "44.569", "Longitude": "-79.329" },
+  { "Name": "Mikisew", "Latitude": "45.821413", "Longitude": "-79.512874" },
+  { "Name": "Misery Bay", "Latitude": "45.800503", "Longitude": "-82.726107" },
+  { "Name": "Missinaibi", "Latitude": "48.404334", "Longitude": "-83.521872" },
+  { "Name": "Mississagi", "Latitude": "46.57873", "Longitude": "-82.723984" },
+  {
+    "Name": "Mono Cliffs",
+    "Latitude": "44.0477951",
+    "Longitude": "-80.07415366"
+  },
+  {
+    "Name": "Murphys Point",
+    "Latitude": "44.78201781",
+    "Longitude": "-76.23773575"
+  },
+  { "Name": "Nagagamisis", "Latitude": "49.456218", "Longitude": "-84.696496" },
+  { "Name": "Neys", "Latitude": "48.78764", "Longitude": "-86.603851" },
+  { "Name": "North Beach", "Latitude": "43.953448", "Longitude": "-77.522129" },
+  {
+    "Name": "Oastler Lake",
+    "Latitude": "45.309631",
+    "Longitude": "-79.963983"
+  },
+  {
+    "Name": "Obabika River",
+    "Latitude": "47.14062",
+    "Longitude": "-80.308512"
+  },
+  { "Name": "Ojibway", "Latitude": "49.973826", "Longitude": "-92.138543" },
+  {
+    "Name": "Ouimet Canyon",
+    "Latitude": "48.766486",
+    "Longitude": "-88.670826"
+  },
+  {
+    "Name": "Oxtongue River-Ragged Falls",
+    "Latitude": "45.40646576",
+    "Longitude": "-78.8890435"
+  },
+  { "Name": "Pakwash", "Latitude": "50.766486", "Longitude": "-93.43209" },
+  { "Name": "Pancake Bay", "Latitude": "46.969783", "Longitude": "-84.702083" },
+  {
+    "Name": "Petroglyphs",
+    "Latitude": "44.621922",
+    "Longitude": "-78.0477976"
+  },
+  {
+    "Name": "Pigeon River",
+    "Latitude": "48.003692",
+    "Longitude": "-89.580631"
+  },
+  { "Name": "Point Farms", "Latitude": "43.8052", "Longitude": "-81.713" },
+  { "Name": "Port Bruce", "Latitude": "42.65499", "Longitude": "-81.012649" },
+  {
+    "Name": "Port Burwell",
+    "Latitude": "42.646896",
+    "Longitude": "-80.811954"
+  },
+  { "Name": "Potholes", "Latitude": "47.958493", "Longitude": "-84.26831" },
+  { "Name": "Presqu'ile", "Latitude": "44.0101", "Longitude": "-77.7416" },
+  { "Name": "Quetico", "Latitude": "48.675", "Longitude": "-91.1258" },
+  {
+    "Name": "Rainbow Falls",
+    "Latitude": "48.839408",
+    "Longitude": "-87.4438656"
+  },
+  {
+    "Name": "René Brunelle",
+    "Latitude": "49.417357",
+    "Longitude": "-82.139301"
+  },
+  { "Name": "Restoule", "Latitude": "46.06529", "Longitude": "-79.76884" },
+  {
+    "Name": "Rideau River",
+    "Latitude": "45.059854",
+    "Longitude": "-75.671649"
+  },
+  {
+    "Name": "Rock Point",
+    "Latitude": "42.8568061",
+    "Longitude": "-79.5507386"
+  },
+  { "Name": "Rondeau", "Latitude": "42.324081", "Longitude": "-81.847002" },
+  { "Name": "Rushing River", "Latitude": "49.6816", "Longitude": "-94.2359" },
+  { "Name": "Samuel de Champlain", "Latitude": "46.29", "Longitude": "-78.86" },
+  { "Name": "Sandbanks", "Latitude": "43.91122", "Longitude": "-77.24169" },
+  {
+    "Name": "Sandbar Lake",
+    "Latitude": "49.467516",
+    "Longitude": "-91.545418"
+  },
+  {
+    "Name": "Sauble Falls",
+    "Latitude": "44.6734319",
+    "Longitude": "-81.2570725"
+  },
+  { "Name": "Selkirk", "Latitude": "42.815804", "Longitude": "-79.957876" },
+  { "Name": "Sharbot Lake", "Latitude": "44.764794", "Longitude": "-76.72384" },
+  { "Name": "Sibbald Point", "Latitude": "44.3217", "Longitude": "-79.325" },
+  { "Name": "Silent Lake", "Latitude": "44.92306", "Longitude": "-78.07121" },
+  {
+    "Name": "Silver Falls",
+    "Latitude": "48.68388629",
+    "Longitude": "-89.60598495"
+  },
+  { "Name": "Silver Lake", "Latitude": "44.82982", "Longitude": "-76.57669" },
+  {
+    "Name": "Sioux Narrows",
+    "Latitude": "49.429325",
+    "Longitude": "-94.047582"
+  },
+  { "Name": "Six Mile Lake", "Latitude": "44.88824", "Longitude": "-79.75216" },
+  {
+    "Name": "Sleeping Giant",
+    "Latitude": "48.50637",
+    "Longitude": "-88.728676"
+  },
+  { "Name": "Solace", "Latitude": "47.197998", "Longitude": "-80.693104" },
+  {
+    "Name": "Spanish River",
+    "Latitude": "46.411881",
+    "Longitude": "-81.844265"
+  },
+  { "Name": "Springwater", "Latitude": "44.441793", "Longitude": "-79.758725" },
+  { "Name": "Sturgeon Bay", "Latitude": "45.62355", "Longitude": "-80.41577" },
+  {
+    "Name": "Sturgeon River",
+    "Latitude": "46.720316",
+    "Longitude": "-80.363981"
+  },
+  {
+    "Name": "The Massasauga",
+    "Latitude": "45.16050292",
+    "Longitude": "-79.9717354"
+  },
+  { "Name": "Pinery", "Latitude": "43.24841", "Longitude": "-81.82342" },
+  { "Name": "Tidewater", "Latitude": "51.22", "Longitude": "-80.65" },
+  {
+    "Name": "Turkey Point",
+    "Latitude": "42.700398",
+    "Longitude": "-80.329666"
+  },
+  { "Name": "Voyageur", "Latitude": "45.55561", "Longitude": "-74.4449" },
+  { "Name": "Wabakimi", "Latitude": "50.59", "Longitude": "-89.55" },
+  { "Name": "Wakami Lake", "Latitude": "47.33304", "Longitude": "-82.52381" },
+  { "Name": "Wasaga Beach", "Latitude": "44.4985", "Longitude": "-80.047283" },
+  { "Name": "Wheatley", "Latitude": "42.090666", "Longitude": "-82.442196" },
+  { "Name": "White Lake", "Latitude": "48.713534", "Longitude": "-85.649972" },
+  { "Name": "Windy Lake", "Latitude": "46.622078", "Longitude": "-81.455217" },
+  { "Name": "Woodland Caribou", "Latitude": "51.104", "Longitude": "-94.288" }
+]
