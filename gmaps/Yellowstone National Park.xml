@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Yellowstone National Park</name>
+    <description>Sites to see in Yellowstone National Park</description>
+    <Style id="icon-22-nodesc-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-22-nodesc-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-22-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-22-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-22-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-503-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-503-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-503-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-503-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-503-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-503-DB4436-nodesc-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-503-DB4436-nodesc-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-503-DB4436-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-503-DB4436-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Untitled layer</name>
+      <Placemark>
+        <name>Old Faithful Lodge</name>
+        <description>Cafeteria, Gift Shop, and Cabin Front Desk</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.825529,44.459415,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Old Faithful Inn</name>
+        <description>Largest log cabin structure.  Rooms, Dining, Bar, Gift Shop, Deck overlooking Old Faithful</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.831044,44.460127,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Old Faithful Snow Lodge</name>
+        <description>Rooms, Dining, Bar, Gift Shop</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.829992,44.456904,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Old Faithful Geyser</name>
+        <description>Old Faithful is not the largest or most regular geyser in the park. It has become a popular destination because it erupts more frequently than any of the other big geysers.</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.827922,44.460365,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Castle Geyser</name>
+        <description>Castle Geyser has the largest cone and may be the oldest of all geysers in the basin. Its eruption pattern has changed considerably throughout its recorded history. Castle is currently erupting about every 10 - 12 hours. A water eruption frequently reaches 90 feet (27m) and lasts about 20 minutes. The water phase is followed by a noisy steam phase lasting 30 - 40 minutes.</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.83673,44.463634,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Daisy Geyser</name>
+        <description>Daisy Geyser erupts at an angle to a height of 75 feet (23m) for 3 - 5 minutes. Typically, Daisy is quite predictable, with eruption intervals of 110 - 240 minutes. An exception to this is when nearby Splendid Geyser erupts.</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.84396,44.470342,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Riverside Geyser</name>
+        <description><![CDATA[Situated on the bank of the Firehole River, Riverside Geyser is one of the most picturesque geysers in the park. During its 20-minute eruptions, a 75 foot (23m) column of water arches gracefully over the river. Eruptions are about 5-1/2 to 6-1/2 hours apart. There is water runoff over the edge of Riverside's cone for an hour or two before each eruption. Many geysers have similar "indications" that they are about to erupt.]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.84122,44.473419,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Morning Glory Pool</name>
+        <description><![CDATA[Long a favored destination for park visitors, Morning Glory Pool was named in the 1880s for its remarkable likeness to its namesake flower. However, this beautiful pool has fallen victim to vandalism. People have thrown literally tons of coins, trash, rocks, and logs into the pool. Much of the debris subsequently became embedded in the sides and vent of the spring, affecting water circulation and accelerating the loss of thermal energy. Through the years Morning Glory's appearance has changed as its temperature dropped. Orange and yellow bacteria that formerly colored only the periphery of the spring now spread toward its center.]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.843811,44.475011,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grotto Geyser</name>
+        <description>Grotto Geyser erupts about every eight hours. It splashes to a height of 10 feet (3m) for 1 1/2 to more than 10 hours. The weirdly shaped cone, that gives this geyser its name, may have resulted from geyserite covering the trunks of trees that once grew there.</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.842142,44.471724,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Giant Geyser</name>
+        <description><![CDATA[Giant Geyser was dormant for many years after the energy shift in 1955. Since then, it has slowly become active again. During 1997, its eruptions occurred every 3 - 10 days. This spectacular geyser's eruptions last about an hour and can reach heights of 180 - 250 feet (55 - 76m). During eruptions small geysers nearby may also erupt.]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.841048,44.470647,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grand Geyser</name>
+        <description>An eruption of Grand Geyser, the tallest predictable geyser in the world, occurs every 7 - 15 hours. A classic fountain geyser, Grand erupts from a large pool with powerful bursts rather than a steady column like Old Faithful. An average eruption lasts 9 - 12 minutes and consists of 1 - 4 bursts, sometimes reaching 200 feet (60m).</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.837288,44.466371,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Beehive Geyser</name>
+        <description><![CDATA[Beehive Geysers shoots a column of water up to 190 feet and creates a delicate rainbow against a deep blue sky.<br><br>Beehive Geyser is magnificent. Eruptions usually occur twice each day with displays lasting 4 - 5 minutes. During an eruption, the narrow cone acts like a nozzle, projecting the water column to heights of 130 - 190 ft (40 - 55m).<br><br>Placement is approximate.]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.830121,44.462203,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mystic Falls</name>
+        <description><![CDATA[Mystic Falls Trail<br><br>This trail follows a lovely creek through a lodgepole pine forest before reaching the 70- foot falls. By following a series of switchbacks, an overlook of the Upper Geyser Basin can be reached before looping back to join the main trail.<br><br>Trailhead: Back of the Biscuit Basin boardwalk<br><br>Distance: 2.4 miles (4 km) roundtrip<br><br>Level of Difficultly: Moderate]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.873766,44.483922,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grand Prismatic Spring</name>
+        <description><![CDATA[Yellowstone's largest hot springs, Grand Prismatic Spring, is 370 feet in diameter and more than 121 feet in depth.]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.838532,44.525518,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fairy Falls</name>
+        <description><![CDATA[At 200 feet high, Fairy Falls is an impressive backcountry sight. It can be reached from two different trailheads. The first trailhead, 1 mile south of the Midway Geyser Basin, begins at a steel bridge across the Firehole River and follows the Fountain Freight Road hiking/biking trail for approximately 1 mile before the hiking-only trail to Fairy Falls branches off on the left. The second trailhead, 1/2 mile south of the Nez Perce picnic area on the Fountain Freight Road, follows the hiking/biking path from the northern end, 1-3/4 miles to the junction with the Fairy Falls trail.<br><br>Trailhead: 1) Steel Bridge parking area 1 mile south of the Midway Geyser Basin<br><br>2) Fountain Freight Road parking area 1 mile south of Nez Perce picnic area on the Fountain Freight Road<br><br>Distance: 5 miles (8.3 km) from trailhead #1; 7 miles (5.5 km) from trailhead #2<br><br>Level of Difficulty: Easy]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.870333,44.524828,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fountain Paint Pots</name>
+        <description><![CDATA[Fountain Paint Pot Trail<br><br>Yellowstone's four types of thermal features can be seen in one short walk along this loop trail: geysers, hot springs, mudpots, and fumaroles. A trail guide is available for this area, which also includes the Firehole Lake Drive area.<br><br>Trailhead: Parking area 8 miles north of Old Faithful<br><br>Distance: 0.5 mile (0.8 km) loop<br><br>Level of Difficulty: Easy]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.806409,44.550589,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Craig Pass/Isa Lake</name>
+        <description>Both names are used to describe the same location seven miles south of Old Faithful on the Grand Loop Road. At 8,262 feet along the Continental Divide, Isa Lake is a uniquely confusing feature. During spring runoff, it drains into both the Atlantic and Pacific Oceans at the same time! (And backwards, too!) The west side of the lake flows into the Firehole drainage and, eventually, the Atlantic throughout the year. The east side, during spring, flows toward the Snake River drainage and the Pacific.</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.719222,44.441279,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Upper Falls</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.499909,44.71286,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lower Falls</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.496003,44.718013,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Artist Point</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.479496,44.721257,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Inspiration Point</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.469836,44.724688,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mt Washburn</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.43383,44.797443,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tower Fall</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.387337,44.894024,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Petrified Tree</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.439376,44.916305,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Undine Falls</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.638943,44.944074,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mammoth Hot Springs Visitors Center</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.69955,44.976396,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mammoth Hot Springs</name>
+        <description>Area around pointer</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.704421,44.971766,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Golden Gate</name>
+        <description>Falls</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.726325,44.933799,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sheepeater Cliffs</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.729892,44.891298,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Obsidian Cliff</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.728464,44.823742,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Roaring Mountain</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.738786,44.780768,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Norris Geyser Basin</name>
+        <description>Area</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.706096,44.724142,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Artist Paintpots</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.737208,44.692363,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gibbon Falls</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.770741,44.654046,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Firehole Falls</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.863733,44.628756,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Firehole Swimming</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.860365,44.617913,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Firehole River Picnic Area</name>
+        <description>A favorite picnic area</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.829948,44.586567,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grand Fountain Geyser</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.800252,44.536562,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mallard Lake</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.777034,44.477277,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lone Star Geyser</name>
+        <description>Approximate location</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.806475,44.418577,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Duck Lake</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.580567,44.420847,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>West Thumb Geyser Basin</name>
+        <description>Area</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.571556,44.417073,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gull Point Drive</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.433755,44.526099,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Natural Bridge</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.455963,44.526381,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fishing Bridge</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.382105,44.566631,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nez Perce Picnic Area</name>
+        <description>Favorite picnic area - used to be know as Buffalo Ford Picnic Area</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.419915,44.619165,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mud Volcano Area</name>
+        <description>Area</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.434313,44.624502,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Dragon's Mouth]]></name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.434811,44.62516,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hayden Valley</name>
+        <description>Area</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.476798,44.672437,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ice Lake</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.62889,44.721003,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wolf Lake</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.585116,44.747343,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grebe Lake</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.558166,44.751854,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cascade Lake</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.522803,44.751609,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Virginia Cascades</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.64779,44.713059,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lewis Lake</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.629749,44.305301,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Riddle Lake</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.548209,44.356259,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Heart Lake</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.486755,44.269787,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shoshone Lake</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.693436,44.377366,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shoshone Lake Overlook</name>
+        <description>View of the Grand Tetons</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.692179,44.448227,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sedge Bay Picnic Area</name>
+        <description>Favorite picnic area - view of the Grand Tetons</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.278347,44.519643,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lake Butte Overlook</name>
+        <description>View of the Grand Tetons and Lake Yellowstone</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.275129,44.510057,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stevenson Island</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.38496,44.516032,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dot Island</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.410098,44.451757,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Frank Island</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.366677,44.425198,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lewis Falls</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.637088,44.267349,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lewis Canyon</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.655326,44.191867,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Moose Falls</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.672724,44.151867,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Flagg Ranch</name>
+        <description>Area</description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.667643,44.106369,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lewis Lake Campground</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.627475,44.28002,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grant Village Area</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.556342,44.390217,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grant Village Campground</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.563959,44.394435,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bridge Bay Area</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.437853,44.533433,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bridge Bay Campground</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.436941,44.53468,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lake Village Area</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.399422,44.551855,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fishing Bridge Area</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.376677,44.56479,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fishing Bridge RV Park</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.369854,44.563657,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fishing Bridge Visitor Center</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.37775,44.563015,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Indian Pond</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.324364,44.558306,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Canyon Visitors Center</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.491963,44.734707,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Canyon Village Area</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.491106,44.733888,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Canyon Campground</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.488719,44.735926,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Madison Campground</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.861384,44.64533,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mammoth Campground</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.693521,44.973025,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Roosevelt Arch</name>
+        <description><![CDATA[The first major entrance for Yellowstone was at the north boundary. Before 1903, trains would bring visitors to Cinnabar, Montana, which was a few miles northwest of Gardiner, Montana, and people would climb onto horse-drawn coaches there to enter the park. In 1903, the railway finally came to Gardiner, and people entered through an enormous stone archway. Robert Reamer, a famous architect in Yellowstone, designed the immense stone arch for coaches to travel through on their way into the park. At the time of the arch's construction, President Theodore Roosevelt was visiting the park. He consequently placed the cornerstone for the arch, which then took his name. The top of the Roosevelt Arch is inscribed with "For the benefit and enjoyment of the people," which is from the Organic Act of 1872, the enabling legislation for Yellowstone National Park.]]></description>
+        <styleUrl>#icon-503-DB4436</styleUrl>
+        <Point>
+          <coordinates>
+            -110.708809,45.029536,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Swan Lake</name>
+        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.73635,44.919355,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Upper Geyser Basin Overlook</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.866425,44.487011,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Observation Point</name>
+        <styleUrl>#icon-22-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -110.824451,44.464711,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

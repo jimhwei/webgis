@@ -1,0 +1,1568 @@
+[
+  {
+    "attributes": {
+      "OID": 1,
+      "Name": "Old Faithful Lodge",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Cafeteria, Gift Shop, and Cabin Front Desk",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.82552899999996,
+      "y": 44.459415000000035
+    }
+  },
+  {
+    "attributes": {
+      "OID": 2,
+      "Name": "Old Faithful Inn",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Largest log cabin structure.  Rooms, Dining, Bar, Gift Shop, Deck overlooking Old Faithful",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.83104399999996,
+      "y": 44.460127000000057
+    }
+  },
+  {
+    "attributes": {
+      "OID": 3,
+      "Name": "Old Faithful Snow Lodge",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Rooms, Dining, Bar, Gift Shop",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.82999199999995,
+      "y": 44.456904000000065
+    }
+  },
+  {
+    "attributes": {
+      "OID": 4,
+      "Name": "Old Faithful Geyser",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Old Faithful is not the largest or most regular geyser in the park. It has become a popular destination because it erupts more frequently than any of the other big geysers.",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.82792199999994,
+      "y": 44.460365000000081
+    }
+  },
+  {
+    "attributes": {
+      "OID": 5,
+      "Name": "Castle Geyser",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Castle Geyser has the largest cone and may be the oldest of all geysers in the basin. Its eruption pattern has changed considerably throughout its recorded history. Castle is currently erupting about every 10 - 12 hours. A water eruption frequently reaches 90 feet (27m) and lasts about 20 minutes. The water phase is followed by a noisy steam phase lasting 30 - 40 minutes.",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.83672999999999,
+      "y": 44.46363400000007
+    }
+  },
+  {
+    "attributes": {
+      "OID": 6,
+      "Name": "Daisy Geyser",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Daisy Geyser erupts at an angle to a height of 75 feet (23m) for 3 - 5 minutes. Typically, Daisy is quite predictable, with eruption intervals of 110 - 240 minutes. An exception to this is when nearby Splendid Geyser erupts.",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.84395999999998,
+      "y": 44.470342000000073
+    }
+  },
+  {
+    "attributes": {
+      "OID": 7,
+      "Name": "Riverside Geyser",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Situated on the bank of the Firehole River, Riverside Geyser is one of the most picturesque geysers in the park. During its 20-minute eruptions, a 75 foot (23m) column of water arches gracefully over the river. Eruptions are about 5-1/2 to 6-1/2 hours apart. There is water runoff over the edge of Riverside's cone for an hour or two before each eruption. Many geysers have similar \"indications\" that they are about to erupt.",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.84121999999996,
+      "y": 44.473419000000035
+    }
+  },
+  {
+    "attributes": {
+      "OID": 8,
+      "Name": "Morning Glory Pool",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Long a favored destination for park visitors, Morning Glory Pool was named in the 1880s for its remarkable likeness to its namesake flower. However, this beautiful pool has fallen victim to vandalism. People have thrown literally tons of coins, trash, rocks, and logs into the pool. Much of the debris subsequently became embedded in the sides and vent of the spring, affecting water circulation and accelerating the loss of thermal energy. Through the years Morning Glory's appearance has changed as its temperature dropped. Orange and yellow bacteria that formerly colored only the periphery of the spring now spread toward its center.",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.84381099999996,
+      "y": 44.475011000000052
+    }
+  },
+  {
+    "attributes": {
+      "OID": 9,
+      "Name": "Grotto Geyser",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Grotto Geyser erupts about every eight hours. It splashes to a height of 10 feet (3m) for 1 1/2 to more than 10 hours. The weirdly shaped cone, that gives this geyser its name, may have resulted from geyserite covering the trunks of trees that once grew there.",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.84214199999997,
+      "y": 44.471724000000052
+    }
+  },
+  {
+    "attributes": {
+      "OID": 10,
+      "Name": "Giant Geyser",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Giant Geyser was dormant for many years after the energy shift in 1955. Since then, it has slowly become active again. During 1997, its eruptions occurred every 3 - 10 days. This spectacular geyser's eruptions last about an hour and can reach heights of 180 - 250 feet (55 - 76m). During eruptions small geysers nearby may also erupt.",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.84104799999994,
+      "y": 44.470647000000042
+    }
+  },
+  {
+    "attributes": {
+      "OID": 11,
+      "Name": "Grand Geyser",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "An eruption of Grand Geyser, the tallest predictable geyser in the world, occurs every 7 - 15 hours. A classic fountain geyser, Grand erupts from a large pool with powerful bursts rather than a steady column like Old Faithful. An average eruption lasts 9 - 12 minutes and consists of 1 - 4 bursts, sometimes reaching 200 feet (60m).",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.83728799999994,
+      "y": 44.466371000000038
+    }
+  },
+  {
+    "attributes": {
+      "OID": 12,
+      "Name": "Beehive Geyser",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Beehive Geysers shoots a column of water up to 190 feet and creates a delicate rainbow against a deep blue sky.\u003cbr\u003e\u003cbr\u003eBeehive Geyser is magnificent. Eruptions usually occur twice each day with displays lasting 4 - 5 minutes. During an eruption, the narrow cone acts like a nozzle, projecting the water column to heights of 130 - 190 ft (40 - 55m).\u003cbr\u003e\u003cbr\u003ePlacement is approximate.",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.83012099999996,
+      "y": 44.462203000000045
+    }
+  },
+  {
+    "attributes": {
+      "OID": 13,
+      "Name": "Mystic Falls",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Mystic Falls Trail\u003cbr\u003e\u003cbr\u003eThis trail follows a lovely creek through a lodgepole pine forest before reaching the 70- foot falls. By following a series of switchbacks, an overlook of the Upper Geyser Basin can be reached before looping back to join the main trail.\u003cbr\u003e\u003cbr\u003eTrailhead: Back of the Biscuit Basin boardwalk\u003cbr\u003e\u003cbr\u003eDistance: 2.4 miles (4 km) roundtrip\u003cbr\u003e\u003cbr\u003eLevel of Difficultly: Moderate",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.87376599999999,
+      "y": 44.483922000000064
+    }
+  },
+  {
+    "attributes": {
+      "OID": 14,
+      "Name": "Grand Prismatic Spring",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Yellowstone's largest hot springs, Grand Prismatic Spring, is 370 feet in diameter and more than 121 feet in depth.",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.83853199999999,
+      "y": 44.525518000000034
+    }
+  },
+  {
+    "attributes": {
+      "OID": 15,
+      "Name": "Fairy Falls",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "At 200 feet high, Fairy Falls is an impressive backcountry sight. It can be reached from two different trailheads. The first trailhead, 1 mile south of the Midway Geyser Basin, begins at a steel bridge across the Firehole River and follows the Fountain Freight Road hiking/biking trail for approximately 1 mile before the hiking-only trail to Fairy Falls branches off on the left. The second trailhead, 1/2 mile south of the Nez Perce picnic area on the Fountain Freight Road, follows the hiking/biking path from the northern end, 1-3/4 miles to the junction with the Fairy Falls trail.\u003cbr\u003e\u003cbr\u003eTrailhead: 1) Steel Bridge parking area 1 mile south of the Midway Geyser Basin\u003cbr\u003e\u003cbr\u003e2) Fountain Freight Road parking area 1 mile south of Nez Perce picnic area on the Fountain Freight Road\u003cbr\u003e\u003cbr\u003eDistance: 5 miles (8.3 km) from trailhead #1; 7 miles (5.5 km) from trailhead #2\u003cbr\u003e\u003cbr\u003eLevel of Difficulty: Easy",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.87033299999996,
+      "y": 44.52482800000007
+    }
+  },
+  {
+    "attributes": {
+      "OID": 16,
+      "Name": "Fountain Paint Pots",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Fountain Paint Pot Trail\u003cbr\u003e\u003cbr\u003eYellowstone's four types of thermal features can be seen in one short walk along this loop trail: geysers, hot springs, mudpots, and fumaroles. A trail guide is available for this area, which also includes the Firehole Lake Drive area.\u003cbr\u003e\u003cbr\u003eTrailhead: Parking area 8 miles north of Old Faithful\u003cbr\u003e\u003cbr\u003eDistance: 0.5 mile (0.8 km) loop\u003cbr\u003e\u003cbr\u003eLevel of Difficulty: Easy",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.80640899999997,
+      "y": 44.550589000000059
+    }
+  },
+  {
+    "attributes": {
+      "OID": 17,
+      "Name": "Craig Pass/Isa Lake",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer/Craig Pass",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Both names are used to describe the same location seven miles south of Old Faithful on the Grand Loop Road. At 8,262 feet along the Continental Divide, Isa Lake is a uniquely confusing feature. During spring runoff, it drains into both the Atlantic and Pacific Oceans at the same time! (And backwards, too!) The west side of the lake flows into the Firehole drainage and, eventually, the Atlantic throughout the year. The east side, during spring, flows toward the Snake River drainage and the Pacific.",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.71922199999995,
+      "y": 44.441279000000065
+    }
+  },
+  {
+    "attributes": {
+      "OID": 18,
+      "Name": "Upper Falls",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.49990899999995,
+      "y": 44.712860000000035
+    }
+  },
+  {
+    "attributes": {
+      "OID": 19,
+      "Name": "Lower Falls",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.49600299999997,
+      "y": 44.718013000000042
+    }
+  },
+  {
+    "attributes": {
+      "OID": 20,
+      "Name": "Artist Point",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.47949599999998,
+      "y": 44.721257000000037
+    }
+  },
+  {
+    "attributes": {
+      "OID": 21,
+      "Name": "Inspiration Point",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.46983599999999,
+      "y": 44.724688000000071
+    }
+  },
+  {
+    "attributes": {
+      "OID": 22,
+      "Name": "Mt Washburn",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.43382999999994,
+      "y": 44.797443000000044
+    }
+  },
+  {
+    "attributes": {
+      "OID": 23,
+      "Name": "Tower Fall",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.38733699999995,
+      "y": 44.894024000000059
+    }
+  },
+  {
+    "attributes": {
+      "OID": 24,
+      "Name": "Petrified Tree",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.43937599999998,
+      "y": 44.916305000000079
+    }
+  },
+  {
+    "attributes": {
+      "OID": 25,
+      "Name": "Undine Falls",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.63894299999998,
+      "y": 44.944074000000057
+    }
+  },
+  {
+    "attributes": {
+      "OID": 26,
+      "Name": "Mammoth Hot Springs Visitors Center",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.69954999999999,
+      "y": 44.976396000000079
+    }
+  },
+  {
+    "attributes": {
+      "OID": 27,
+      "Name": "Mammoth Hot Springs",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Area around pointer",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.70442099999997,
+      "y": 44.971766000000059
+    }
+  },
+  {
+    "attributes": {
+      "OID": 28,
+      "Name": "Golden Gate",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Falls",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.72632499999997,
+      "y": 44.933799000000079
+    }
+  },
+  {
+    "attributes": {
+      "OID": 29,
+      "Name": "Sheepeater Cliffs",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.72989199999995,
+      "y": 44.891298000000063
+    }
+  },
+  {
+    "attributes": {
+      "OID": 30,
+      "Name": "Obsidian Cliff",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.72846399999997,
+      "y": 44.823742000000038
+    }
+  },
+  {
+    "attributes": {
+      "OID": 31,
+      "Name": "Roaring Mountain",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.73878599999995,
+      "y": 44.78076800000008
+    }
+  },
+  {
+    "attributes": {
+      "OID": 32,
+      "Name": "Norris Geyser Basin",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Area",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.70609599999995,
+      "y": 44.724142000000029
+    }
+  },
+  {
+    "attributes": {
+      "OID": 33,
+      "Name": "Artist Paintpots",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.73720799999995,
+      "y": 44.692363000000057
+    }
+  },
+  {
+    "attributes": {
+      "OID": 34,
+      "Name": "Gibbon Falls",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.77074099999999,
+      "y": 44.654046000000051
+    }
+  },
+  {
+    "attributes": {
+      "OID": 35,
+      "Name": "Firehole Falls",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.86373299999997,
+      "y": 44.628756000000067
+    }
+  },
+  {
+    "attributes": {
+      "OID": 36,
+      "Name": "Firehole Swimming",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.86036499999994,
+      "y": 44.617913000000044
+    }
+  },
+  {
+    "attributes": {
+      "OID": 37,
+      "Name": "Firehole River Picnic Area",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "A favorite picnic area",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.82994799999994,
+      "y": 44.586567000000059
+    }
+  },
+  {
+    "attributes": {
+      "OID": 38,
+      "Name": "Grand Fountain Geyser",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.80025199999994,
+      "y": 44.53656200000006
+    }
+  },
+  {
+    "attributes": {
+      "OID": 39,
+      "Name": "Mallard Lake",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.77703399999996,
+      "y": 44.477277000000072
+    }
+  },
+  {
+    "attributes": {
+      "OID": 40,
+      "Name": "Lone Star Geyser",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Approximate location",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.80647499999998,
+      "y": 44.418577000000028
+    }
+  },
+  {
+    "attributes": {
+      "OID": 41,
+      "Name": "Duck Lake",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.58056699999997,
+      "y": 44.420847000000037
+    }
+  },
+  {
+    "attributes": {
+      "OID": 42,
+      "Name": "West Thumb Geyser Basin",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Area",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.57155599999999,
+      "y": 44.417073000000073
+    }
+  },
+  {
+    "attributes": {
+      "OID": 43,
+      "Name": "Gull Point Drive",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.43375499999996,
+      "y": 44.526099000000045
+    }
+  },
+  {
+    "attributes": {
+      "OID": 44,
+      "Name": "Natural Bridge",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.45596299999994,
+      "y": 44.526381000000072
+    }
+  },
+  {
+    "attributes": {
+      "OID": 45,
+      "Name": "Fishing Bridge",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.38210499999997,
+      "y": 44.566631000000029
+    }
+  },
+  {
+    "attributes": {
+      "OID": 46,
+      "Name": "Nez Perce Picnic Area",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Favorite picnic area - used to be know as Buffalo Ford Picnic Area",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.41991499999995,
+      "y": 44.619165000000066
+    }
+  },
+  {
+    "attributes": {
+      "OID": 47,
+      "Name": "Mud Volcano Area",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Area",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.43431299999997,
+      "y": 44.624502000000064
+    }
+  },
+  {
+    "attributes": {
+      "OID": 48,
+      "Name": "Dragon's Mouth",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.43481099999997,
+      "y": 44.625160000000051
+    }
+  },
+  {
+    "attributes": {
+      "OID": 49,
+      "Name": "Hayden Valley",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Area",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.47679799999997,
+      "y": 44.672437000000059
+    }
+  },
+  {
+    "attributes": {
+      "OID": 50,
+      "Name": "Ice Lake",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.62888999999996,
+      "y": 44.721003000000053
+    }
+  },
+  {
+    "attributes": {
+      "OID": 51,
+      "Name": "Wolf Lake",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.58511599999997,
+      "y": 44.747343000000058
+    }
+  },
+  {
+    "attributes": {
+      "OID": 52,
+      "Name": "Grebe Lake",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.55816599999997,
+      "y": 44.751854000000037
+    }
+  },
+  {
+    "attributes": {
+      "OID": 53,
+      "Name": "Cascade Lake",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.52280299999995,
+      "y": 44.75160900000003
+    }
+  },
+  {
+    "attributes": {
+      "OID": 54,
+      "Name": "Virginia Cascades",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.64778999999999,
+      "y": 44.713059000000044
+    }
+  },
+  {
+    "attributes": {
+      "OID": 55,
+      "Name": "Lewis Lake",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.62974899999995,
+      "y": 44.305301000000043
+    }
+  },
+  {
+    "attributes": {
+      "OID": 56,
+      "Name": "Riddle Lake",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.54820899999999,
+      "y": 44.35625900000008
+    }
+  },
+  {
+    "attributes": {
+      "OID": 57,
+      "Name": "Heart Lake",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.48675499999996,
+      "y": 44.269787000000065
+    }
+  },
+  {
+    "attributes": {
+      "OID": 58,
+      "Name": "Shoshone Lake",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.69343599999996,
+      "y": 44.377366000000052
+    }
+  },
+  {
+    "attributes": {
+      "OID": 59,
+      "Name": "Shoshone Lake Overlook",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "View of the Grand Tetons",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.69217899999995,
+      "y": 44.448227000000031
+    }
+  },
+  {
+    "attributes": {
+      "OID": 60,
+      "Name": "Sedge Bay Picnic Area",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Favorite picnic area - view of the Grand Tetons",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.27834699999994,
+      "y": 44.51964300000003
+    }
+  },
+  {
+    "attributes": {
+      "OID": 61,
+      "Name": "Lake Butte Overlook",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "View of the Grand Tetons and Lake Yellowstone",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.27512899999999,
+      "y": 44.510057000000074
+    }
+  },
+  {
+    "attributes": {
+      "OID": 62,
+      "Name": "Stevenson Island",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.38495999999998,
+      "y": 44.516032000000052
+    }
+  },
+  {
+    "attributes": {
+      "OID": 63,
+      "Name": "Dot Island",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.41009799999995,
+      "y": 44.451757000000043
+    }
+  },
+  {
+    "attributes": {
+      "OID": 64,
+      "Name": "Frank Island",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.36667699999998,
+      "y": 44.42519800000008
+    }
+  },
+  {
+    "attributes": {
+      "OID": 65,
+      "Name": "Lewis Falls",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.63708799999995,
+      "y": 44.267349000000081
+    }
+  },
+  {
+    "attributes": {
+      "OID": 66,
+      "Name": "Lewis Canyon",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.65532599999995,
+      "y": 44.191867000000059
+    }
+  },
+  {
+    "attributes": {
+      "OID": 67,
+      "Name": "Moose Falls",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.67272399999996,
+      "y": 44.151867000000038
+    }
+  },
+  {
+    "attributes": {
+      "OID": 68,
+      "Name": "Flagg Ranch",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "Area",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.66764299999994,
+      "y": 44.106369000000029
+    }
+  },
+  {
+    "attributes": {
+      "OID": 69,
+      "Name": "Lewis Lake Campground",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.62747499999995,
+      "y": 44.280020000000036
+    }
+  },
+  {
+    "attributes": {
+      "OID": 70,
+      "Name": "Grant Village Area",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.55634199999997,
+      "y": 44.390217000000064
+    }
+  },
+  {
+    "attributes": {
+      "OID": 71,
+      "Name": "Grant Village Campground",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.56395899999995,
+      "y": 44.394435000000044
+    }
+  },
+  {
+    "attributes": {
+      "OID": 72,
+      "Name": "Bridge Bay Area",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.43785299999996,
+      "y": 44.533433000000059
+    }
+  },
+  {
+    "attributes": {
+      "OID": 73,
+      "Name": "Bridge Bay Campground",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.43694099999999,
+      "y": 44.534680000000037
+    }
+  },
+  {
+    "attributes": {
+      "OID": 74,
+      "Name": "Lake Village Area",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.39942199999996,
+      "y": 44.551855000000046
+    }
+  },
+  {
+    "attributes": {
+      "OID": 75,
+      "Name": "Fishing Bridge Area",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.37667699999997,
+      "y": 44.564790000000073
+    }
+  },
+  {
+    "attributes": {
+      "OID": 76,
+      "Name": "Fishing Bridge RV Park",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.36985399999998,
+      "y": 44.563657000000035
+    }
+  },
+  {
+    "attributes": {
+      "OID": 77,
+      "Name": "Fishing Bridge Visitor Center",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.37774999999999,
+      "y": 44.563015000000064
+    }
+  },
+  {
+    "attributes": {
+      "OID": 78,
+      "Name": "Indian Pond",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.32436399999995,
+      "y": 44.558306000000073
+    }
+  },
+  {
+    "attributes": {
+      "OID": 79,
+      "Name": "Canyon Visitors Center",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.49196299999994,
+      "y": 44.734707000000071
+    }
+  },
+  {
+    "attributes": {
+      "OID": 80,
+      "Name": "Canyon Village Area",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.49110599999995,
+      "y": 44.733888000000036
+    }
+  },
+  {
+    "attributes": {
+      "OID": 81,
+      "Name": "Canyon Campground",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.48871899999995,
+      "y": 44.735926000000063
+    }
+  },
+  {
+    "attributes": {
+      "OID": 82,
+      "Name": "Madison Campground",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.86138399999999,
+      "y": 44.645330000000058
+    }
+  },
+  {
+    "attributes": {
+      "OID": 83,
+      "Name": "Mammoth Campground",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.69352099999998,
+      "y": 44.973025000000064
+    }
+  },
+  {
+    "attributes": {
+      "OID": 84,
+      "Name": "Roosevelt Arch",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "The first major entrance for Yellowstone was at the north boundary. Before 1903, trains would bring visitors to Cinnabar, Montana, which was a few miles northwest of Gardiner, Montana, and people would climb onto horse-drawn coaches there to enter the park. In 1903, the railway finally came to Gardiner, and people entered through an enormous stone archway. Robert Reamer, a famous architect in Yellowstone, designed the immense stone arch for coaches to travel through on their way into the park. At the time of the arch's construction, President Theodore Roosevelt was visiting the park. He consequently placed the cornerstone for the arch, which then took his name. The top of the Roosevelt Arch is inscribed with \"For the benefit and enjoyment of the people,\" which is from the Organic Act of 1872, the enabling legislation for Yellowstone National Park.",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.70880899999997,
+      "y": 45.029536000000064
+    }
+  },
+  {
+    "attributes": {
+      "OID": 85,
+      "Name": "Swan Lake",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 0,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.73634999999996,
+      "y": 44.919355000000053
+    }
+  },
+  {
+    "attributes": {
+      "OID": 86,
+      "Name": "Upper Geyser Basin Overlook",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 1,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.86642499999999,
+      "y": 44.487011000000052
+    }
+  },
+  {
+    "attributes": {
+      "OID": 87,
+      "Name": "Observation Point",
+      "FolderPath": "Yellowstone National Park/Yellowstone National Park/Untitled layer",
+      "SymbolID": 1,
+      "AltMode": -1,
+      "Base": 0,
+      "Snippet": "",
+      "PopupInfo": "",
+      "HasLabel": -1,
+      "LabelID": 0
+    },
+    "geometry": {
+      "x": -110.82445099999995,
+      "y": 44.464711000000079
+    }
+  }
+]

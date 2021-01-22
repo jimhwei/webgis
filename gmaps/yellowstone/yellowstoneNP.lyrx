@@ -1,0 +1,376 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "2.5.0",
+  "build" : 22081,
+  "layers" : [
+    "CIMPATH=yellowstonenp/yellowstonenp2.xml"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMFeatureLayer",
+      "name" : "Points",
+      "uRI" : "CIMPATH=yellowstonenp/points.xml",
+      "useSourceMetadata" : false,
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "autoGenerateFeatureTemplates" : true,
+      "featureTable" : {
+        "type" : "CIMFeatureTable",
+        "displayField" : "Name",
+        "editable" : true,
+        "timeFields" : {
+          "type" : "CIMTimeTableDefinition"
+        },
+        "timeDefinition" : {
+          "type" : "CIMTimeDataDefinition"
+        },
+        "timeDisplayDefinition" : {
+          "type" : "CIMTimeDisplayDefinition",
+          "timeInterval" : 0,
+          "timeIntervalUnits" : "esriTimeUnitsHours",
+          "timeOffsetUnits" : "esriTimeUnitsYears"
+        },
+        "dataConnection" : {
+          "type" : "CIMFeatureDatasetDataConnection",
+          "featureDataset" : "Placemarks",
+          "workspaceConnectionString" : "DATABASE=.\\yellowstoneNP.gdb",
+          "workspaceFactory" : "FileGDB",
+          "dataset" : "Points",
+          "datasetType" : "esriDTFeatureClass"
+        },
+        "studyAreaSpatialRel" : "esriSpatialRelUndefined",
+        "searchOrder" : "esriSearchOrderSpatial"
+      },
+      "htmlPopupEnabled" : true,
+      "htmlPopupFormat" : {
+        "type" : "CIMHtmlPopupFormat",
+        "htmlXSLStyleSheet" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:fo=\"http://www.w3.org/1999/XSL/Format\" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\">\n\n                <xsl:template match=\"/\">\n                                <html>\n                                                <head>      \n                                                </head>\n                                                <body>\n                                                                <table>\n                                                                <tr><td style=\"white-space: nowrap;\">\n                                                                                <xsl:choose>\n                                                                                                <xsl:when test=\"FieldsDoc/Fields/Field/FieldName\">\n                                                                                                                <xsl:apply-templates select=\"FieldsDoc/Fields/Field/FieldName[contains(., 'PopupInfo')]/..\" />\n                                                                                                </xsl:when>\n                                                                                                <xsl:otherwise>\n                                                                                                                <xsl:apply-templates select=\"FieldsDoc/Fields/Field\"/>\n                                                                                                </xsl:otherwise>\n                                                                                </xsl:choose>\n                                                                                </td></tr>\n                                                                </table>\n                                                </body>\n                                </html>\n                </xsl:template>\n\n                <xsl:template match=\"Field\">\n                                <xsl:value-of select=\"FieldValue\" disable-output-escaping=\"yes\"/>\n                </xsl:template>               \n</xsl:stylesheet>",
+        "htmlUseCodedDomainValues" : true,
+        "htmlPresentationStyle" : "XSLStyleSheet"
+      },
+      "isFlattened" : true,
+      "selectable" : true,
+      "selectionSymbol" : {
+        "type" : "CIMSymbolReference",
+        "symbol" : {
+          "type" : "CIMPointSymbol",
+          "symbolLayers" : [
+            {
+              "type" : "CIMVectorMarker",
+              "enable" : true,
+              "anchorPointUnits" : "Relative",
+              "dominantSizeAxis3D" : "Z",
+              "size" : 8,
+              "billboardMode3D" : "FaceNearPlane",
+              "frame" : {
+                "xmin" : -2,
+                "ymin" : -2,
+                "xmax" : 2,
+                "ymax" : 2
+              },
+              "markerGraphics" : [
+                {
+                  "type" : "CIMMarkerGraphic",
+                  "geometry" : {
+                    "curveRings" : [
+                      [
+                        [
+                          1.2246467991473532e-16,
+                          2
+                        ],
+                        {
+                          "a" : [
+                            [
+                              1.2246467991473532e-16,
+                              2
+                            ],
+                            [
+                              0,
+                              0
+                            ],
+                            0,
+                            1
+                          ]
+                        }
+                      ]
+                    ]
+                  },
+                  "symbol" : {
+                    "type" : "CIMPolygonSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMSolidFill",
+                        "enable" : true,
+                        "color" : {
+                          "type" : "CIMRGBColor",
+                          "values" : [
+                            0,
+                            255,
+                            255,
+                            100
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "respectFrame" : true
+            }
+          ],
+          "haloSize" : 1,
+          "scaleX" : 1,
+          "angleAlignment" : "Map"
+        }
+      },
+      "featureCacheType" : "None",
+      "labelClasses" : [
+        {
+          "type" : "CIMLabelClass",
+          "expression" : "[Name]",
+          "expressionEngine" : "VBScript",
+          "featuresToLabel" : "AllVisibleFeatures",
+          "name" : "0",
+          "priority" : -1,
+          "standardLabelPlacementProperties" : {
+            "type" : "CIMStandardLabelPlacementProperties",
+            "featureType" : "Line",
+            "featureWeight" : "None",
+            "labelWeight" : "High",
+            "numLabelsOption" : "OneLabelPerName",
+            "lineLabelPosition" : {
+              "type" : "CIMStandardLineLabelPosition",
+              "above" : true,
+              "inLine" : true,
+              "parallel" : true
+            },
+            "lineLabelPriorities" : {
+              "type" : "CIMStandardLineLabelPriorities",
+              "aboveStart" : 3,
+              "aboveAlong" : 3,
+              "aboveEnd" : 3,
+              "centerStart" : 3,
+              "centerAlong" : 3,
+              "centerEnd" : 3,
+              "belowStart" : 3,
+              "belowAlong" : 3,
+              "belowEnd" : 3
+            },
+            "pointPlacementMethod" : "AroundPoint",
+            "pointPlacementPriorities" : {
+              "type" : "CIMStandardPointPlacementPriorities",
+              "aboveLeft" : 2,
+              "aboveCenter" : 2,
+              "aboveRight" : 1,
+              "centerLeft" : 3,
+              "centerRight" : 2,
+              "belowLeft" : 3,
+              "belowCenter" : 3,
+              "belowRight" : 2
+            },
+            "rotationType" : "Arithmetic",
+            "polygonPlacementMethod" : "AlwaysHorizontal"
+          },
+          "textSymbol" : {
+            "type" : "CIMSymbolReference",
+            "symbol" : {
+              "type" : "CIMTextSymbol",
+              "blockProgression" : "TTB",
+              "compatibilityMode" : true,
+              "depth3D" : 1,
+              "drawSoftHyphen" : true,
+              "extrapolateBaselines" : true,
+              "fontEffects" : "Normal",
+              "fontEncoding" : "Unicode",
+              "fontFamilyName" : "Tahoma",
+              "fontStyleName" : "Bold",
+              "fontType" : "Unspecified",
+              "haloSize" : 1.5,
+              "haloSymbol" : {
+                "type" : "CIMPolygonSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidFill",
+                    "enable" : true,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        0,
+                        0,
+                        0,
+                        100
+                      ]
+                    }
+                  }
+                ]
+              },
+              "height" : 1.5,
+              "hinting" : "Default",
+              "horizontalAlignment" : "Center",
+              "kerning" : true,
+              "letterWidth" : 100,
+              "ligatures" : true,
+              "lineGapType" : "ExtraLeading",
+              "shadowColor" : {
+                "type" : "CIMRGBColor",
+                "values" : [
+                  0,
+                  0,
+                  0,
+                  100
+                ]
+              },
+              "symbol" : {
+                "type" : "CIMPolygonSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidFill",
+                    "enable" : true,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        255,
+                        255,
+                        255,
+                        100
+                      ]
+                    }
+                  }
+                ]
+              },
+              "textCase" : "Normal",
+              "textDirection" : "LTR",
+              "verticalAlignment" : "Baseline",
+              "verticalGlyphOrientation" : "Right",
+              "wordSpacing" : 100,
+              "billboardMode3D" : "FaceNearPlane"
+            }
+          },
+          "useCodedValue" : true,
+          "whereClause" : "\"LabelID\" = 0",
+          "visibility" : true,
+          "iD" : -1
+        }
+      ],
+      "labelVisibility" : true,
+      "renderer" : {
+        "type" : "CIMUniqueValueRenderer",
+        "defaultLabel" : "<all other values>",
+        "defaultSymbolPatch" : "Default",
+        "fields" : [
+          "SymbolID"
+        ],
+        "groups" : [
+          {
+            "type" : "CIMUniqueValueGroup",
+            "classes" : [
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "0",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPointSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMPictureMarker",
+                        "enable" : true,
+                        "anchorPointUnits" : "Relative",
+                        "dominantSizeAxis3D" : "Z",
+                        "size" : 26.25,
+                        "billboardMode3D" : "FaceNearPlane",
+                        "invertBackfaceTexture" : true,
+                        "scaleX" : 1,
+                        "textureFilter" : "Draft",
+                        "url" : "data:image/png;base64,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"
+                      }
+                    ],
+                    "haloSize" : 1,
+                    "scaleX" : 1,
+                    "angleAlignment" : "Map"
+                  }
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "0"
+                    ]
+                  }
+                ],
+                "visible" : true
+              },
+              {
+                "type" : "CIMUniqueValueClass",
+                "label" : "1",
+                "patch" : "Default",
+                "symbol" : {
+                  "type" : "CIMSymbolReference",
+                  "symbol" : {
+                    "type" : "CIMPointSymbol",
+                    "symbolLayers" : [
+                      {
+                        "type" : "CIMPictureMarker",
+                        "enable" : true,
+                        "anchorPointUnits" : "Relative",
+                        "dominantSizeAxis3D" : "Z",
+                        "size" : 26.25,
+                        "billboardMode3D" : "FaceNearPlane",
+                        "invertBackfaceTexture" : true,
+                        "scaleX" : 1,
+                        "textureFilter" : "Draft",
+                        "url" : "data:image/png;base64,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"
+                      }
+                    ],
+                    "haloSize" : 1,
+                    "scaleX" : 1,
+                    "angleAlignment" : "Map"
+                  }
+                },
+                "values" : [
+                  {
+                    "type" : "CIMUniqueValue",
+                    "fieldValues" : [
+                      "1"
+                    ]
+                  }
+                ],
+                "visible" : true
+              }
+            ],
+            "heading" : "SymbolID"
+          }
+        ],
+        "polygonSymbolColorTarget" : "Fill"
+      },
+      "scaleSymbols" : true,
+      "snappable" : true
+    },
+    {
+      "type" : "CIMGroupLayer",
+      "name" : "yellowstoneNP",
+      "uRI" : "CIMPATH=yellowstonenp/yellowstonenp2.xml",
+      "useSourceMetadata" : true,
+      "layerType" : "Operational",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "layers" : [
+        "CIMPATH=yellowstonenp/points.xml"
+      ]
+    }
+  ]
+}
