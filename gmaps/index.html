@@ -15,10 +15,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,900&display=swap" rel="stylesheet"> 
     <style type="text/css">
-      h3 {
-        text-align: center;
+      h1 {
         font-weight: 900;
         font-size: 40px;
+      }
+
+      p{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center, justify;
+        margin-bottom: 45px;
+        border-radius: 5px;
+        border: grey solid;
+        padding: 10px;
+      }
+
+      h1,h2,h3,h4 {
+        text-align: center;
       }
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -29,12 +43,17 @@
       }
 
       /* Optional: Makes the sample page fill the window. */
+      /* No text aligns because it messes up the span inside of cluster markers */
       html,
       body {
-        height: 100%;
+        /* text-align: center; */
+        /* height: 100%; */
         margin: 0;
         padding: 0;
         font-family: 'Roboto', sans-serif;
+      }
+      body {
+        background-color: #f5f5f5;
       }
     </style>
     <script>
@@ -46,7 +65,7 @@
           center: { lat: 44.56978404051916, lng: -110.5744475 },
         });
         // Create an array of alphabetical characters used to label the markers.
-        const labels = "*";
+        const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         // Add some markers to the map.
         // Note: The code uses the JavaScript Array.prototype.map() method to
         // create an array of markers based on a given "locations" array.
@@ -682,7 +701,13 @@
     </script>
   </head>
   <body>
-    <h3>Yellowstone National Park Attractions Map</h3>
-    <div id="map"></div>
+    <section>
+      <h1>Yellowstone National Park Attractions Map</h1>
+      <div id="map"></div>
+      <section>
+        <h2>About</h2>
+        <p>Yellowstone is the first park that started the national parks movement during President Ulysses S. Grant's administration. Known for its stunning landscapes, hot springs and geysers, the park experiences roughly over 4 million visitors per year. The above interactive map is a collection of points of interests when visiting the national park. See for yourself what your next adventure holds.</p>
+      </section>
+    </section>
   </body>
 </html>
