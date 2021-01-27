@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yellowstone National Park</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5a1FoKmbmQ1djPh6pRx7oiknBf3ACNOE&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+
+    <!-- One single HTML5 page with embedded (not linked or inline) CSS.  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      h1 {
+        font-weight: 900;
+        font-size: 40px;
+      }
+
+      p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center, justify;
+        margin-bottom: 45px;
+        border-radius: 5px;
+        border: grey solid;
+        padding: 10px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        text-align: center;
+      }
+
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        width: 90%;
+        height: 500px;
+        margin: auto;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      /* No text aligns because it messes up the span inside of cluster markers */
+      html,
+      body {
+        /* text-align: center; */
+        /* height: 100%; */
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+      body {
+        background-color: #f5f5f5;
+      }
+    </style>
+    <script>
+      // function initMap() {
+      //   const map = new google.maps.Map(document.getElementById("map"), {
+      //     zoom: 9,
+      //     center: { lat: 44.56978404051916, lng: -110.5744475 },
+      //   });
+      //   const contentString = "Hello";
+
+      //   const infowindow = new google.maps.InfoWindow({
+      //     content: contentString,
+      //   });
+      //   // Create an array of alphabetical characters used to label the markers.
+      //   const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      //   // Add some markers to the map.
+      //   // Note: The code uses the JavaScript Array.prototype.map() method to
+      //   // create an array of markers based on a given "locations" array.
+      //   // The map() method here has nothing to do with the Google Maps API.
+      //   const markers = locations.map((location, i) => {
+      //     return new google.maps.Marker({
+      //       position: location,
+      //       label: labels[i % labels.length],
+      //     });
+      //     marker.addListener("click", () => {
+      //       infowindow.open(map, marker);
+      //     });
+      //   });
+
+      //   var markerCluster = new MarkerClusterer(map, markers, {
+      //     imagePath: "images/m",
+      //   });
+      // }
+
+      // const locations = [
+      //   {
+      //     OID: 1,
+      //     name: "Old Faithful Lodge",
+      //     PopupInfo: "Cafeteria, Gift Shop, and Cabin Front Desk",
+      //     lat: 44.459415000000035,
+      //     lng: -110.82552899999996,
+      //   },
+      //   {
+      //     OID: 2,
+      //     name: "Old Faithful Inn",
+      //     PopupInfo:
+      //       "Largest log cabin structure.  Rooms, Dining, Bar, Gift Shop, Deck overlooking Old Faithful",
+      //     lat: 44.46012700000006,
+      //     lng: -110.83104399999996,
+      //   },
+      // ];
+      // This example displays a marker at the center of Australia.
+      // When the user clicks the marker, an info window opens.
+
+      function initMap() {
+        const uluru = { lat: -25.363, lng: 131.044 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+          MapTypeId: "satellite",
+        });
+        map.setMapTypeId("hybrid");
+
+        const contentString =
+          '<div id="content">' +
+          '<div id="siteNotice">' +
+          "</div>" +
+          '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+          '<div id="bodyContent">' +
+          "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
+          "sandstone rock formation in the southern part of the " +
+          "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
+          "south west of the nearest large town, Alice Springs; 450&#160;km " +
+          "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
+          "features of the Uluru - Kata Tjuta National Park. Uluru is " +
+          "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
+          "Aboriginal people of the area. It has many springs, waterholes, " +
+          "rock caves and ancient paintings. Uluru is listed as a World " +
+          "Heritage Site.</p>" +
+          '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
+          "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
+          "(last visited June 22, 2009).</p>" +
+          "</div>" +
+          "</div>";
+        const infowindow = new google.maps.InfoWindow({
+          content: contentString,
+        });
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map,
+          title: "Uluru (Ayers Rock)",
+        });
+        marker.addListener("click", () => {
+          infowindow.open(map, marker);
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <section>
+      <h1>Yellowstone National Park Attractions Map</h1>
+      <div id="map"></div>
+      <section>
+        <h2>About</h2>
+        <p>
+          Yellowstone is the first park that started the national parks movement
+          during President Ulysses S. Grant's administration. Known for its
+          stunning landscapes, hot springs and geysers, the park experiences
+          roughly over 4 million visitors per year. The above interactive map is
+          a collection of points of interests when visiting the national park.
+          See for yourself what your next adventure holds.
+        </p>
+      </section>
+      <h4>
+        <a
+          class="footer"
+          href="https://jimhwei.github.io/webgis/gmaps/index.html"
+          >Return to Directory</a
+        >
+      </h4>
+    </section>
+  </body>
+</html>

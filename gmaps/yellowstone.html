@@ -37,10 +37,10 @@
       h1,
       h2,
       h3,
-      h4,
-      section {
+      h4 {
         text-align: center;
       }
+
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
@@ -69,6 +69,11 @@
           zoom: 9,
           center: { lat: 44.56978404051916, lng: -110.5744475 },
         });
+        const contentString = "Hello";
+
+        const infowindow = new google.maps.InfoWindow({
+          content: contentString,
+        });
         // Create an array of alphabetical characters used to label the markers.
         const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         // Add some markers to the map.
@@ -80,12 +85,11 @@
             position: location,
             label: labels[i % labels.length],
           });
+          marker.addListener("click", () => {
+            infowindow.open(map, marker);
+          });
         });
-        // Add a marker clusterer to manage the markers.
-        // var markerCluster = new MarkerClusterer(map, markers, {
-        //   imagePath:
-        //   "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-        // });
+
         var markerCluster = new MarkerClusterer(map, markers, {
           imagePath: "images/m",
         });
@@ -736,11 +740,13 @@
           See for yourself what your next adventure holds.
         </p>
       </section>
-      <div>
-        <a href="https://jimhwei.github.io/webgis//gmaps/index.html"
+      <h4>
+        <a
+          class="footer"
+          href="https://jimhwei.github.io/webgis/gmaps/index.html"
           >Return to Directory</a
         >
-      </div>
+      </h4>
     </section>
   </body>
 </html>
