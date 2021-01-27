@@ -1,7 +1,3 @@
-# Webgis
-
-Course repo for the fleming web gis dev class
-
 ## Guide to using markdown
 
 https://guides.github.com/features/mastering-markdown/

@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yellowstone National Park</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5a1FoKmbmQ1djPh6pRx7oiknBf3ACNOE&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    
+    <!-- One single HTML5 page with embedded (not linked or inline) CSS.  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,900&display=swap" rel="stylesheet"> 
+    <style type="text/css">
+      h1 {
+        font-weight: 900;
+        font-size: 40px;
+      }
+
+      p{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center, justify;
+        margin-bottom: 45px;
+        border-radius: 5px;
+        border: grey solid;
+        padding: 10px;
+      }
+
+      h1,h2,h3,h4 {
+        text-align: center;
+      }
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        width: 90%;
+        height: 500px;
+        margin: auto;
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      /* No text aligns because it messes up the span inside of cluster markers */
+      html,
+      body {
+        /* text-align: center; */
+        /* height: 100%; */
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+      body {
+        background-color: #f5f5f5;
+      }
+    </style>
+    <script>
+      function initMap() {
+
+        
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 9,
+          center: { lat: 44.56978404051916, lng: -110.5744475 },
+        });
+        // Create an array of alphabetical characters used to label the markers.
+        const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        // Add some markers to the map.
+        // Note: The code uses the JavaScript Array.prototype.map() method to
+        // create an array of markers based on a given "locations" array.
+        // The map() method here has nothing to do with the Google Maps API.
+        const markers = locations.map((location, i) => {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length],
+          });
+        });
+        // Add a marker clusterer to manage the markers.
+        // var markerCluster = new MarkerClusterer(map, markers, {
+        //   imagePath:
+        //   "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+        // });
+        var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'images/m'});
+      }
+      
+      const locations = [
+  {
+    "OID": 1,
+    "name": "Old Faithful Lodge",
+    "PopupInfo": "Cafeteria, Gift Shop, and Cabin Front Desk",
+    "lat": 44.459415000000035,
+    "lng": -110.82552899999996
+  },
+  {
+    "OID": 2,
+    "name": "Old Faithful Inn",
+    "PopupInfo": "Largest log cabin structure.  Rooms, Dining, Bar, Gift Shop, Deck overlooking Old Faithful",
+    "lat": 44.46012700000006,
+    "lng": -110.83104399999996
+  },
+  {
+    "OID": 3,
+    "name": "Old Faithful Snow Lodge",
+    "PopupInfo": "Rooms, Dining, Bar, Gift Shop",
+    "lat": 44.456904000000065,
+    "lng": -110.82999199999995
+  },
+  {
+    "OID": 4,
+    "name": "Old Faithful Geyser",
+    "PopupInfo": "Old Faithful is not the largest or most regular geyser in the park. It has become a popular destination because it erupts more frequently than any of the other big geysers.",
+    "lat": 44.46036500000008,
+    "lng": -110.82792199999994
+  },
+  {
+    "OID": 5,
+    "name": "Castle Geyser",
+    "PopupInfo": "Castle Geyser has the largest cone and may be the oldest of all geysers in the basin. Its eruption pattern has changed considerably throughout its recorded history. Castle is currently erupting about every 10 - 12 hours. A water eruption frequently reaches 90 feet (27m) and lasts about 20 minutes. The water phase is followed by a noisy steam phase lasting 30 - 40 minutes.",
+    "lat": 44.46363400000007,
+    "lng": -110.83672999999999
+  },
+  {
+    "OID": 6,
+    "name": "Daisy Geyser",
+    "PopupInfo": "Daisy Geyser erupts at an angle to a height of 75 feet (23m) for 3 - 5 minutes. Typically, Daisy is quite predictable, with eruption intervals of 110 - 240 minutes. An exception to this is when nearby Splendid Geyser erupts.",
+    "lat": 44.47034200000007,
+    "lng": -110.84395999999998
+  },
+  {
+    "OID": 7,
+    "name": "Riverside Geyser",
+    "PopupInfo": "Situated on the bank of the Firehole River, Riverside Geyser is one of the most picturesque geysers in the park. During its 20-minute eruptions, a 75 foot (23m) column of water arches gracefully over the river. Eruptions are about 5-1/2 to 6-1/2 hours apart. There is water runoff over the edge of Riverside's cone for an hour or two before each eruption. Many geysers have similar 'indications' that they are about to erupt.",
+    "lat": 44.473419000000035,
+    "lng": -110.84121999999996
+  },
+  {
+    "OID": 8,
+    "name": "Morning Glory Pool",
+    "PopupInfo": "Long a favored destination for park visitors, Morning Glory Pool was named in the 1880s for its remarkable likeness to its namesake flower. However, this beautiful pool has fallen victim to vandalism. People have thrown literally tons of coins, trash, rocks, and logs into the pool. Much of the debris subsequently became embedded in the sides and vent of the spring, affecting water circulation and accelerating the loss of thermal energy. Through the years Morning Glory's appearance has changed as its temperature dropped. Orange and yellow bacteria that formerly colored only the periphery of the spring now spread toward its center.",
+    "lat": 44.47501100000005,
+    "lng": -110.84381099999996
+  },
+  {
+    "OID": 9,
+    "name": "Grotto Geyser",
+    "PopupInfo": "Grotto Geyser erupts about every eight hours. It splashes to a height of 10 feet (3m) for 1 1/2 to more than 10 hours. The weirdly shaped cone, that gives this geyser its name, may have resulted from geyserite covering the trunks of trees that once grew there.",
+    "lat": 44.47172400000005,
+    "lng": -110.84214199999997
+  },
+  {
+    "OID": 10,
+    "name": "Giant Geyser",
+    "PopupInfo": "Giant Geyser was dormant for many years after the energy shift in 1955. Since then, it has slowly become active again. During 1997, its eruptions occurred every 3 - 10 days. This spectacular geyser's eruptions last about an hour and can reach heights of 180 - 250 feet (55 - 76m). During eruptions small geysers nearby may also erupt.",
+    "lat": 44.47064700000004,
+    "lng": -110.84104799999994
+  },
+  {
+    "OID": 11,
+    "name": "Grand Geyser",
+    "PopupInfo": "An eruption of Grand Geyser, the tallest predictable geyser in the world, occurs every 7 - 15 hours. A classic fountain geyser, Grand erupts from a large pool with powerful bursts rather than a steady column like Old Faithful. An average eruption lasts 9 - 12 minutes and consists of 1 - 4 bursts, sometimes reaching 200 feet (60m).",
+    "lat": 44.46637100000004,
+    "lng": -110.83728799999994
+  },
+  {
+    "OID": 12,
+    "name": "Beehive Geyser",
+    "PopupInfo": "Beehive Geysers shoots a column of water up to 190 feet and creates a delicate rainbow against a deep blue sky.<br><br>Beehive Geyser is magnificent. Eruptions usually occur twice each day with displays lasting 4 - 5 minutes. During an eruption, the narrow cone acts like a nozzle, projecting the water column to heights of 130 - 190 ft (40 - 55m).<br><br>Placement is approximate.",
+    "lat": 44.462203000000045,
+    "lng": -110.83012099999996
+  },
+  {
+    "OID": 13,
+    "name": "Mystic Falls",
+    "PopupInfo": "Mystic Falls Trail<br><br>This trail follows a lovely creek through a lodgepole pine forest before reaching the 70- foot falls. By following a series of switchbacks, an overlook of the Upper Geyser Basin can be reached before looping back to join the main trail.<br><br>Trailhead: Back of the Biscuit Basin boardwalk<br><br>Distance: 2.4 miles (4 km) roundtrip<br><br>Level of Difficultly: Moderate",
+    "lat": 44.483922000000064,
+    "lng": -110.87376599999999
+  },
+  {
+    "OID": 14,
+    "name": "Grand Prismatic Spring",
+    "PopupInfo": "Yellowstone's largest hot springs, Grand Prismatic Spring, is 370 feet in diameter and more than 121 feet in depth.",
+    "lat": 44.525518000000034,
+    "lng": -110.83853199999999
+  },
+  {
+    "OID": 15,
+    "name": "Fairy Falls",
+    "PopupInfo": "At 200 feet high, Fairy Falls is an impressive backcountry sight. It can be reached from two different trailheads. The first trailhead, 1 mile south of the Midway Geyser Basin, begins at a steel bridge across the Firehole River and follows the Fountain Freight Road hiking/biking trail for approximately 1 mile before the hiking-only trail to Fairy Falls branches off on the left. The second trailhead, 1/2 mile south of the Nez Perce picnic area on the Fountain Freight Road, follows the hiking/biking path from the northern end, 1-3/4 miles to the junction with the Fairy Falls trail.<br><br>Trailhead: 1) Steel Bridge parking area 1 mile south of the Midway Geyser Basin<br><br>2) Fountain Freight Road parking area 1 mile south of Nez Perce picnic area on the Fountain Freight Road<br><br>Distance: 5 miles (8.3 km) from trailhead #1; 7 miles (5.5 km) from trailhead #2<br><br>Level of Difficulty: Easy",
+    "lat": 44.52482800000007,
+    "lng": -110.87033299999996
+  },
+  {
+    "OID": 16,
+    "name": "Fountain Paint Pots",
+    "PopupInfo": "Fountain Paint Pot Trail<br><br>Yellowstone's four types of thermal features can be seen in one short walk along this loop trail: geysers, hot springs, mudpots, and fumaroles. A trail guide is available for this area, which also includes the Firehole Lake Drive area.<br><br>Trailhead: Parking area 8 miles north of Old Faithful<br><br>Distance: 0.5 mile (0.8 km) loop<br><br>Level of Difficulty: Easy",
+    "lat": 44.55058900000006,
+    "lng": -110.80640899999997
+  },
+  {
+    "OID": 17,
+    "name": "Craig Pass/Isa Lake",
+    "PopupInfo": "Both names are used to describe the same location seven miles south of Old Faithful on the Grand Loop Road. At 8,262 feet along the Continental Divide, Isa Lake is a uniquely confusing feature. During spring runoff, it drains into both the Atlantic and Pacific Oceans at the same time! (And backwards, too!) The west side of the lake flows into the Firehole drainage and, eventually, the Atlantic throughout the year. The east side, during spring, flows toward the Snake River drainage and the Pacific.",
+    "lat": 44.441279000000065,
+    "lng": -110.71922199999995
+  },
+  {
+    "OID": 18,
+    "name": "Upper Falls",
+    "PopupInfo": "",
+    "lat": 44.712860000000035,
+    "lng": -110.49990899999995
+  },
+  {
+    "OID": 19,
+    "name": "Lower Falls",
+    "PopupInfo": "",
+    "lat": 44.71801300000004,
+    "lng": -110.49600299999997
+  },
+  {
+    "OID": 20,
+    "name": "Artist Point",
+    "PopupInfo": "",
+    "lat": 44.72125700000004,
+    "lng": -110.47949599999998
+  },
+  {
+    "OID": 21,
+    "name": "Inspiration Point",
+    "PopupInfo": "",
+    "lat": 44.72468800000007,
+    "lng": -110.46983599999999
+  },
+  {
+    "OID": 22,
+    "name": "Mt Washburn",
+    "PopupInfo": "",
+    "lat": 44.797443000000044,
+    "lng": -110.43382999999994
+  },
+  {
+    "OID": 23,
+    "name": "Tower Fall",
+    "PopupInfo": "",
+    "lat": 44.89402400000006,
+    "lng": -110.38733699999995
+  },
+  {
+    "OID": 24,
+    "name": "Petrified Tree",
+    "PopupInfo": "",
+    "lat": 44.91630500000008,
+    "lng": -110.43937599999998
+  },
+  {
+    "OID": 25,
+    "name": "Undine Falls",
+    "PopupInfo": "",
+    "lat": 44.94407400000006,
+    "lng": -110.63894299999998
+  },
+  {
+    "OID": 26,
+    "name": "Mammoth Hot Springs Visitors Center",
+    "PopupInfo": "",
+    "lat": 44.97639600000008,
+    "lng": -110.69954999999999
+  },
+  {
+    "OID": 27,
+    "name": "Mammoth Hot Springs",
+    "PopupInfo": "Area around pointer",
+    "lat": 44.97176600000006,
+    "lng": -110.70442099999997
+  },
+  {
+    "OID": 28,
+    "name": "Golden Gate",
+    "PopupInfo": "Falls",
+    "lat": 44.93379900000008,
+    "lng": -110.72632499999997
+  },
+  {
+    "OID": 29,
+    "name": "Sheepeater Cliffs",
+    "PopupInfo": "",
+    "lat": 44.89129800000006,
+    "lng": -110.72989199999995
+  },
+  {
+    "OID": 30,
+    "name": "Obsidian Cliff",
+    "PopupInfo": "",
+    "lat": 44.82374200000004,
+    "lng": -110.72846399999997
+  },
+  {
+    "OID": 31,
+    "name": "Roaring Mountain",
+    "PopupInfo": "",
+    "lat": 44.78076800000008,
+    "lng": -110.73878599999995
+  },
+  {
+    "OID": 32,
+    "name": "Norris Geyser Basin",
+    "PopupInfo": "Area",
+    "lat": 44.72414200000003,
+    "lng": -110.70609599999995
+  },
+  {
+    "OID": 33,
+    "name": "Artist Paintpots",
+    "PopupInfo": "",
+    "lat": 44.69236300000006,
+    "lng": -110.73720799999995
+  },
+  {
+    "OID": 34,
+    "name": "Gibbon Falls",
+    "PopupInfo": "",
+    "lat": 44.65404600000005,
+    "lng": -110.77074099999999
+  },
+  {
+    "OID": 35,
+    "name": "Firehole Falls",
+    "PopupInfo": "",
+    "lat": 44.62875600000007,
+    "lng": -110.86373299999997
+  },
+  {
+    "OID": 36,
+    "name": "Firehole Swimming",
+    "PopupInfo": "",
+    "lat": 44.617913000000044,
+    "lng": -110.86036499999994
+  },
+  {
+    "OID": 37,
+    "name": "Firehole River Picnic Area",
+    "PopupInfo": "A favorite picnic area",
+    "lat": 44.58656700000006,
+    "lng": -110.82994799999994
+  },
+  {
+    "OID": 38,
+    "name": "Grand Fountain Geyser",
+    "PopupInfo": "",
+    "lat": 44.53656200000006,
+    "lng": -110.80025199999994
+  },
+  {
+    "OID": 39,
+    "name": "Mallard Lake",
+    "PopupInfo": "",
+    "lat": 44.47727700000007,
+    "lng": -110.77703399999996
+  },
+  {
+    "OID": 40,
+    "name": "Lone Star Geyser",
+    "PopupInfo": "Approximate location",
+    "lat": 44.41857700000003,
+    "lng": -110.80647499999998
+  },
+  {
+    "OID": 41,
+    "name": "Duck Lake",
+    "PopupInfo": "",
+    "lat": 44.42084700000004,
+    "lng": -110.58056699999997
+  },
+  {
+    "OID": 42,
+    "name": "West Thumb Geyser Basin",
+    "PopupInfo": "Area",
+    "lat": 44.41707300000007,
+    "lng": -110.57155599999999
+  },
+  {
+    "OID": 43,
+    "name": "Gull Point Drive",
+    "PopupInfo": "",
+    "lat": 44.526099000000045,
+    "lng": -110.43375499999996
+  },
+  {
+    "OID": 44,
+    "name": "Natural Bridge",
+    "PopupInfo": "",
+    "lat": 44.52638100000007,
+    "lng": -110.45596299999994
+  },
+  {
+    "OID": 45,
+    "name": "Fishing Bridge",
+    "PopupInfo": "",
+    "lat": 44.56663100000003,
+    "lng": -110.38210499999997
+  },
+  {
+    "OID": 46,
+    "name": "Nez Perce Picnic Area",
+    "PopupInfo": "Favorite picnic area - used to be know as Buffalo Ford Picnic Area",
+    "lat": 44.619165000000066,
+    "lng": -110.41991499999995
+  },
+  {
+    "OID": 47,
+    "name": "Mud Volcano Area",
+    "PopupInfo": "Area",
+    "lat": 44.624502000000064,
+    "lng": -110.43431299999997
+  },
+  {
+    "OID": 48,
+    "name": "Dragon's Mouth",
+    "PopupInfo": "",
+    "lat": 44.62516000000005,
+    "lng": -110.43481099999997
+  },
+  {
+    "OID": 49,
+    "name": "Hayden Valley",
+    "PopupInfo": "Area",
+    "lat": 44.67243700000006,
+    "lng": -110.47679799999997
+  },
+  {
+    "OID": 50,
+    "name": "Ice Lake",
+    "PopupInfo": "",
+    "lat": 44.72100300000005,
+    "lng": -110.62888999999996
+  },
+  {
+    "OID": 51,
+    "name": "Wolf Lake",
+    "PopupInfo": "",
+    "lat": 44.74734300000006,
+    "lng": -110.58511599999997
+  },
+  {
+    "OID": 52,
+    "name": "Grebe Lake",
+    "PopupInfo": "",
+    "lat": 44.75185400000004,
+    "lng": -110.55816599999997
+  },
+  {
+    "OID": 53,
+    "name": "Cascade Lake",
+    "PopupInfo": "",
+    "lat": 44.75160900000003,
+    "lng": -110.52280299999995
+  },
+  {
+    "OID": 54,
+    "name": "Virginia Cascades",
+    "PopupInfo": "",
+    "lat": 44.713059000000044,
+    "lng": -110.64778999999999
+  },
+  {
+    "OID": 55,
+    "name": "Lewis Lake",
+    "PopupInfo": "",
+    "lat": 44.30530100000004,
+    "lng": -110.62974899999995
+  },
+  {
+    "OID": 56,
+    "name": "Riddle Lake",
+    "PopupInfo": "",
+    "lat": 44.35625900000008,
+    "lng": -110.54820899999999
+  },
+  {
+    "OID": 57,
+    "name": "Heart Lake",
+    "PopupInfo": "",
+    "lat": 44.269787000000065,
+    "lng": -110.48675499999996
+  },
+  {
+    "OID": 58,
+    "name": "Shoshone Lake",
+    "PopupInfo": "",
+    "lat": 44.37736600000005,
+    "lng": -110.69343599999996
+  },
+  {
+    "OID": 59,
+    "name": "Shoshone Lake Overlook",
+    "PopupInfo": "View of the Grand Tetons",
+    "lat": 44.44822700000003,
+    "lng": -110.69217899999995
+  },
+  {
+    "OID": 60,
+    "name": "Sedge Bay Picnic Area",
+    "PopupInfo": "Favorite picnic area - view of the Grand Tetons",
+    "lat": 44.51964300000003,
+    "lng": -110.27834699999994
+  },
+  {
+    "OID": 61,
+    "name": "Lake Butte Overlook",
+    "PopupInfo": "View of the Grand Tetons and Lake Yellowstone",
+    "lat": 44.510057000000074,
+    "lng": -110.27512899999999
+  },
+  {
+    "OID": 62,
+    "name": "Stevenson Island",
+    "PopupInfo": "",
+    "lat": 44.51603200000005,
+    "lng": -110.38495999999998
+  },
+  {
+    "OID": 63,
+    "name": "Dot Island",
+    "PopupInfo": "",
+    "lat": 44.45175700000004,
+    "lng": -110.41009799999995
+  },
+  {
+    "OID": 64,
+    "name": "Frank Island",
+    "PopupInfo": "",
+    "lat": 44.42519800000008,
+    "lng": -110.36667699999998
+  },
+  {
+    "OID": 65,
+    "name": "Lewis Falls",
+    "PopupInfo": "",
+    "lat": 44.26734900000008,
+    "lng": -110.63708799999995
+  },
+  {
+    "OID": 66,
+    "name": "Lewis Canyon",
+    "PopupInfo": "",
+    "lat": 44.19186700000006,
+    "lng": -110.65532599999995
+  },
+  {
+    "OID": 67,
+    "name": "Moose Falls",
+    "PopupInfo": "",
+    "lat": 44.15186700000004,
+    "lng": -110.67272399999996
+  },
+  {
+    "OID": 68,
+    "name": "Flagg Ranch",
+    "PopupInfo": "Area",
+    "lat": 44.10636900000003,
+    "lng": -110.66764299999994
+  },
+  {
+    "OID": 69,
+    "name": "Lewis Lake Campground",
+    "PopupInfo": "",
+    "lat": 44.280020000000036,
+    "lng": -110.62747499999995
+  },
+  {
+    "OID": 70,
+    "name": "Grant Village Area",
+    "PopupInfo": "",
+    "lat": 44.390217000000064,
+    "lng": -110.55634199999997
+  },
+  {
+    "OID": 71,
+    "name": "Grant Village Campground",
+    "PopupInfo": "",
+    "lat": 44.394435000000044,
+    "lng": -110.56395899999995
+  },
+  {
+    "OID": 72,
+    "name": "Bridge Bay Area",
+    "PopupInfo": "",
+    "lat": 44.53343300000006,
+    "lng": -110.43785299999996
+  },
+  {
+    "OID": 73,
+    "name": "Bridge Bay Campground",
+    "PopupInfo": "",
+    "lat": 44.53468000000004,
+    "lng": -110.43694099999999
+  },
+  {
+    "OID": 74,
+    "name": "Lake Village Area",
+    "PopupInfo": "",
+    "lat": 44.551855000000046,
+    "lng": -110.39942199999996
+  },
+  {
+    "OID": 75,
+    "name": "Fishing Bridge Area",
+    "PopupInfo": "",
+    "lat": 44.56479000000007,
+    "lng": -110.37667699999997
+  },
+  {
+    "OID": 76,
+    "name": "Fishing Bridge RV Park",
+    "PopupInfo": "",
+    "lat": 44.563657000000035,
+    "lng": -110.36985399999998
+  },
+  {
+    "OID": 77,
+    "name": "Fishing Bridge Visitor Center",
+    "PopupInfo": "",
+    "lat": 44.563015000000064,
+    "lng": -110.37774999999999
+  },
+  {
+    "OID": 78,
+    "name": "Indian Pond",
+    "PopupInfo": "",
+    "lat": 44.55830600000007,
+    "lng": -110.32436399999995
+  },
+  {
+    "OID": 79,
+    "name": "Canyon Visitors Center",
+    "PopupInfo": "",
+    "lat": 44.73470700000007,
+    "lng": -110.49196299999994
+  },
+  {
+    "OID": 80,
+    "name": "Canyon Village Area",
+    "PopupInfo": "",
+    "lat": 44.733888000000036,
+    "lng": -110.49110599999995
+  },
+  {
+    "OID": 81,
+    "name": "Canyon Campground",
+    "PopupInfo": "",
+    "lat": 44.73592600000006,
+    "lng": -110.48871899999995
+  },
+  {
+    "OID": 82,
+    "name": "Madison Campground",
+    "PopupInfo": "",
+    "lat": 44.64533000000006,
+    "lng": -110.86138399999999
+  },
+  {
+    "OID": 83,
+    "name": "Mammoth Campground",
+    "PopupInfo": "",
+    "lat": 44.973025000000064,
+    "lng": -110.69352099999998
+  },
+  {
+    "OID": 84,
+    "name": "Roosevelt Arch",
+    "PopupInfo": "The first major entrance for Yellowstone was at the north boundary. Before 1903, trains would bring visitors to Cinnabar, Montana, which was a few miles northwest of Gardiner, Montana, and people would climb onto horse-drawn coaches there to enter the park. In 1903, the railway finally came to Gardiner, and people entered through an enormous stone archway. Robert Reamer, a famous architect in Yellowstone, designed the immense stone arch for coaches to travel through on their way into the park. At the time of the arch's construction, President Theodore Roosevelt was visiting the park. He consequently placed the cornerstone for the arch, which then took his name. The top of the Roosevelt Arch is inscribed with 'For the benefit and enjoyment of the people,' which is from the Organic Act of 1872, the enabling legislation for Yellowstone National Park.",
+    "lat": 45.029536000000064,
+    "lng": -110.70880899999997
+  },
+  {
+    "OID": 85,
+    "name": "Swan Lake",
+    "PopupInfo": "",
+    "lat": 44.91935500000005,
+    "lng": -110.73634999999996
+  },
+  {
+    "OID": 86,
+    "name": "Upper Geyser Basin Overlook",
+    "PopupInfo": "",
+    "lat": 44.48701100000005,
+    "lng": -110.86642499999999
+  },
+  {
+    "OID": 87,
+    "name": "Observation Point",
+    "PopupInfo": "",
+    "lat": 44.46471100000008,
+    "lng": -110.82445099999995
+  }
+];
+
+
+    </script>
+  </head>
+  <body>
+    <section>
+      <h1>Yellowstone National Park Attractions Map</h1>
+      <div id="map"></div>
+      <section>
+        <h2>About</h2>
+        <p>Yellowstone is the first park that started the national parks movement during President Ulysses S. Grant's administration. Known for its stunning landscapes, hot springs and geysers, the park experiences roughly over 4 million visitors per year. The above interactive map is a collection of points of interests when visiting the national park. See for yourself what your next adventure holds.</p>
+      </section>
+    </section>
+  </body>
+</html>
