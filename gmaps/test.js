@@ -22,5 +22,7 @@ console.log(locations.length);
 // Must be var because i changes
 var i = 0;
 for (i = 0; i < locations.length; i++) {
-  console.log(locations[i].name, locations[i].lat, locations[i].lat);
+  console.log(locations[i].name, locations[i].lng, locations[i].lat);
 }
+
+console.log(locations.length);
