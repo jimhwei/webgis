@@ -64,57 +64,6 @@
       }
     </style>
     <script>
-      // function initMap() {
-      //   const map = new google.maps.Map(document.getElementById("map"), {
-      //     zoom: 9,
-      //     center: { lat: 44.56978404051916, lng: -110.5744475 },
-      //   });
-      //   const contentString = "Hello";
-
-      //   const infowindow = new google.maps.InfoWindow({
-      //     content: contentString,
-      //   });
-      //   // Create an array of alphabetical characters used to label the markers.
-      //   const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-      //   // Add some markers to the map.
-      //   // Note: The code uses the JavaScript Array.prototype.map() method to
-      //   // create an array of markers based on a given "locations" array.
-      //   // The map() method here has nothing to do with the Google Maps API.
-      //   const markers = locations.map((location, i) => {
-      //     return new google.maps.Marker({
-      //       position: location,
-      //       label: labels[i % labels.length],
-      //     });
-      //     marker.addListener("click", () => {
-      //       infowindow.open(map, marker);
-      //     });
-      //   });
-
-      //   var markerCluster = new MarkerClusterer(map, markers, {
-      //     imagePath: "images/m",
-      //   });
-      // }
-
-      // const locations = [
-      //   {
-      //     OID: 1,
-      //     name: "Old Faithful Lodge",
-      //     PopupInfo: "Cafeteria, Gift Shop, and Cabin Front Desk",
-      //     lat: 44.459415000000035,
-      //     lng: -110.82552899999996,
-      //   },
-      //   {
-      //     OID: 2,
-      //     name: "Old Faithful Inn",
-      //     PopupInfo:
-      //       "Largest log cabin structure.  Rooms, Dining, Bar, Gift Shop, Deck overlooking Old Faithful",
-      //     lat: 44.46012700000006,
-      //     lng: -110.83104399999996,
-      //   },
-      // ];
-      // This example displays a marker at the center of Australia.
-      // When the user clicks the marker, an info window opens.
-
       function initMap() {
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 9,
@@ -175,7 +124,8 @@
             map: map,
           });
           const infowindow = new google.maps.InfoWindow({
-            content: locations[i].name + ": " + locations[i].PopupInfo,
+            content:
+              `<b>${locations[i].name}<b>` + ": " + locations[i].PopupInfo,
           });
           // attachSecretMessage(marker, secretMessages[i]);
           marker.addListener("click", () => {
