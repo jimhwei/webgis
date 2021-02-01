@@ -7,14 +7,10 @@ Here's the tutorial I used to convert KML to JSON:
 
 > https://www.imagetrendelite.com/continuum/University/Content/MapTools/GeneratingAJSONMapFileFromKMLWithArcGIS.htm
 
-# The JSON Request
+# Directions
 
-This following api address retrieves json from Richmond Hill Centre for the Performing Arts to the Richmond Hill Public Library.
-
-> https://maps.googleapis.com/maps/api/directions/json?origin=Richmond+Hill+Centre+for+the+Performing+Arts&destination=Central+Library+(Richmond+Hill+Public+Library)&key=AIzaSyA5a1FoKmbmQ1djPh6pRx7oiknBf3ACNOE
+This [api link](https://maps.googleapis.com/maps/api/directions/json?origin=Richmond+Hill+Centre+for+the+Performing+Arts&destination=Central+Library+(Richmond+Hill+Public+Library)&key=AIzaSyA5a1FoKmbmQ1djPh6pRx7oiknBf3ACNOE) retrieves direction from Richmond Hill Centre for the Performing Arts to the Richmond Hill Public Library and returns in a JSON format.
 
 # Places
 
-This returns the JSON for Richmond Green Skate Trail
-
-> https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ0UCkf6IqK4gRAPv0ZtpI9JI&fields=name,rating,formatted_phone_number&key=AIzaSyA5a1FoKmbmQ1djPh6pRx7oiknBf3ACNOE
+This [api link](https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ0UCkf6IqK4gRAPv0ZtpI9JI&fields=name,rating,formatted_phone_number&key=AIzaSyA5a1FoKmbmQ1djPh6pRx7oiknBf3ACNOE) returns the place information for Richmond Green Skate Trail in JSON format. 
