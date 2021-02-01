@@ -1,5 +1,5 @@
 # Start Here!
-> https://jimhwei.github.io/webgis//gmaps/index.html
+[Link to the Google Maps Directory](https://jimhwei.github.io/webgis/gmaps/index.html)
 
 ## Yellowstone
 
