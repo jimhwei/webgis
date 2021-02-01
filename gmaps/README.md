@@ -3,9 +3,7 @@
 
 ## Yellowstone
 
-Here's the tutorial I used to convert KML to JSON:
-
-> https://www.imagetrendelite.com/continuum/University/Content/MapTools/GeneratingAJSONMapFileFromKMLWithArcGIS.htm
+Here's the [tutorial](https://www.imagetrendelite.com/continuum/University/Content/MapTools/GeneratingAJSONMapFileFromKMLWithArcGIS.htm) I used to convert KML to JSON for my Yellow Stone kml dataset.
 
 # Directions
 
