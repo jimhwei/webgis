@@ -64,38 +64,17 @@
       }
     </style>
     <script>
-      function initMap() {
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 9,
-          center: { lat: 44.56978404051916, lng: -110.5744475 },
-        });
-        const contentString = "Hello";
+      // var locations = [];
+      // // Use the Fetch API & ES6
+      // fetch("test.json")
+      //   .then((response) => response.json())
+      //   .then((data) => {
+      //     // Do something with your data
+      //     locations.push(data);
+      //   });
+      // console.log(locations);
 
-        const infowindow = new google.maps.InfoWindow({
-          content: contentString,
-        });
-        // Create an array of alphabetical characters used to label the markers.
-        const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        // Add some markers to the map.
-        // Note: The code uses the JavaScript Array.prototype.map() method to
-        // create an array of markers based on a given "locations" array.
-        // The map() method here has nothing to do with the Google Maps API.
-        const markers = locations.map((location, i) => {
-          return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length],
-          });
-          marker.addListener("click", () => {
-            infowindow.open(map, marker);
-          });
-        });
-
-        var markerCluster = new MarkerClusterer(map, markers, {
-          imagePath: "images/m",
-        });
-      }
-
-      const locations = [
+      var locations = [
         {
           OID: 1,
           name: "Old Faithful Lodge",
@@ -110,13 +89,6 @@
             "Largest log cabin structure.  Rooms, Dining, Bar, Gift Shop, Deck overlooking Old Faithful",
           lat: 44.46012700000006,
           lng: -110.83104399999996,
-        },
-        {
-          OID: 3,
-          name: "Old Faithful Snow Lodge",
-          PopupInfo: "Rooms, Dining, Bar, Gift Shop",
-          lat: 44.456904000000065,
-          lng: -110.82999199999995,
         },
         {
           OID: 4,
@@ -231,202 +203,6 @@
           lng: -110.71922199999995,
         },
         {
-          OID: 18,
-          name: "Upper Falls",
-          PopupInfo: "",
-          lat: 44.712860000000035,
-          lng: -110.49990899999995,
-        },
-        {
-          OID: 19,
-          name: "Lower Falls",
-          PopupInfo: "",
-          lat: 44.71801300000004,
-          lng: -110.49600299999997,
-        },
-        {
-          OID: 20,
-          name: "Artist Point",
-          PopupInfo: "",
-          lat: 44.72125700000004,
-          lng: -110.47949599999998,
-        },
-        {
-          OID: 21,
-          name: "Inspiration Point",
-          PopupInfo: "",
-          lat: 44.72468800000007,
-          lng: -110.46983599999999,
-        },
-        {
-          OID: 22,
-          name: "Mt Washburn",
-          PopupInfo: "",
-          lat: 44.797443000000044,
-          lng: -110.43382999999994,
-        },
-        {
-          OID: 23,
-          name: "Tower Fall",
-          PopupInfo: "",
-          lat: 44.89402400000006,
-          lng: -110.38733699999995,
-        },
-        {
-          OID: 24,
-          name: "Petrified Tree",
-          PopupInfo: "",
-          lat: 44.91630500000008,
-          lng: -110.43937599999998,
-        },
-        {
-          OID: 25,
-          name: "Undine Falls",
-          PopupInfo: "",
-          lat: 44.94407400000006,
-          lng: -110.63894299999998,
-        },
-        {
-          OID: 26,
-          name: "Mammoth Hot Springs Visitors Center",
-          PopupInfo: "",
-          lat: 44.97639600000008,
-          lng: -110.69954999999999,
-        },
-        {
-          OID: 27,
-          name: "Mammoth Hot Springs",
-          PopupInfo: "Area around pointer",
-          lat: 44.97176600000006,
-          lng: -110.70442099999997,
-        },
-        {
-          OID: 28,
-          name: "Golden Gate",
-          PopupInfo: "Falls",
-          lat: 44.93379900000008,
-          lng: -110.72632499999997,
-        },
-        {
-          OID: 29,
-          name: "Sheepeater Cliffs",
-          PopupInfo: "",
-          lat: 44.89129800000006,
-          lng: -110.72989199999995,
-        },
-        {
-          OID: 30,
-          name: "Obsidian Cliff",
-          PopupInfo: "",
-          lat: 44.82374200000004,
-          lng: -110.72846399999997,
-        },
-        {
-          OID: 31,
-          name: "Roaring Mountain",
-          PopupInfo: "",
-          lat: 44.78076800000008,
-          lng: -110.73878599999995,
-        },
-        {
-          OID: 32,
-          name: "Norris Geyser Basin",
-          PopupInfo: "Area",
-          lat: 44.72414200000003,
-          lng: -110.70609599999995,
-        },
-        {
-          OID: 33,
-          name: "Artist Paintpots",
-          PopupInfo: "",
-          lat: 44.69236300000006,
-          lng: -110.73720799999995,
-        },
-        {
-          OID: 34,
-          name: "Gibbon Falls",
-          PopupInfo: "",
-          lat: 44.65404600000005,
-          lng: -110.77074099999999,
-        },
-        {
-          OID: 35,
-          name: "Firehole Falls",
-          PopupInfo: "",
-          lat: 44.62875600000007,
-          lng: -110.86373299999997,
-        },
-        {
-          OID: 36,
-          name: "Firehole Swimming",
-          PopupInfo: "",
-          lat: 44.617913000000044,
-          lng: -110.86036499999994,
-        },
-        {
-          OID: 37,
-          name: "Firehole River Picnic Area",
-          PopupInfo: "A favorite picnic area",
-          lat: 44.58656700000006,
-          lng: -110.82994799999994,
-        },
-        {
-          OID: 38,
-          name: "Grand Fountain Geyser",
-          PopupInfo: "",
-          lat: 44.53656200000006,
-          lng: -110.80025199999994,
-        },
-        {
-          OID: 39,
-          name: "Mallard Lake",
-          PopupInfo: "",
-          lat: 44.47727700000007,
-          lng: -110.77703399999996,
-        },
-        {
-          OID: 40,
-          name: "Lone Star Geyser",
-          PopupInfo: "Approximate location",
-          lat: 44.41857700000003,
-          lng: -110.80647499999998,
-        },
-        {
-          OID: 41,
-          name: "Duck Lake",
-          PopupInfo: "",
-          lat: 44.42084700000004,
-          lng: -110.58056699999997,
-        },
-        {
-          OID: 42,
-          name: "West Thumb Geyser Basin",
-          PopupInfo: "Area",
-          lat: 44.41707300000007,
-          lng: -110.57155599999999,
-        },
-        {
-          OID: 43,
-          name: "Gull Point Drive",
-          PopupInfo: "",
-          lat: 44.526099000000045,
-          lng: -110.43375499999996,
-        },
-        {
-          OID: 44,
-          name: "Natural Bridge",
-          PopupInfo: "",
-          lat: 44.52638100000007,
-          lng: -110.45596299999994,
-        },
-        {
-          OID: 45,
-          name: "Fishing Bridge",
-          PopupInfo: "",
-          lat: 44.56663100000003,
-          lng: -110.38210499999997,
-        },
-        {
           OID: 46,
           name: "Nez Perce Picnic Area",
           PopupInfo:
@@ -434,265 +210,7 @@
           lat: 44.619165000000066,
           lng: -110.41991499999995,
         },
-        {
-          OID: 47,
-          name: "Mud Volcano Area",
-          PopupInfo: "Area",
-          lat: 44.624502000000064,
-          lng: -110.43431299999997,
-        },
-        {
-          OID: 48,
-          name: "Dragon's Mouth",
-          PopupInfo: "",
-          lat: 44.62516000000005,
-          lng: -110.43481099999997,
-        },
-        {
-          OID: 49,
-          name: "Hayden Valley",
-          PopupInfo: "Area",
-          lat: 44.67243700000006,
-          lng: -110.47679799999997,
-        },
-        {
-          OID: 50,
-          name: "Ice Lake",
-          PopupInfo: "",
-          lat: 44.72100300000005,
-          lng: -110.62888999999996,
-        },
-        {
-          OID: 51,
-          name: "Wolf Lake",
-          PopupInfo: "",
-          lat: 44.74734300000006,
-          lng: -110.58511599999997,
-        },
-        {
-          OID: 52,
-          name: "Grebe Lake",
-          PopupInfo: "",
-          lat: 44.75185400000004,
-          lng: -110.55816599999997,
-        },
-        {
-          OID: 53,
-          name: "Cascade Lake",
-          PopupInfo: "",
-          lat: 44.75160900000003,
-          lng: -110.52280299999995,
-        },
-        {
-          OID: 54,
-          name: "Virginia Cascades",
-          PopupInfo: "",
-          lat: 44.713059000000044,
-          lng: -110.64778999999999,
-        },
-        {
-          OID: 55,
-          name: "Lewis Lake",
-          PopupInfo: "",
-          lat: 44.30530100000004,
-          lng: -110.62974899999995,
-        },
-        {
-          OID: 56,
-          name: "Riddle Lake",
-          PopupInfo: "",
-          lat: 44.35625900000008,
-          lng: -110.54820899999999,
-        },
-        {
-          OID: 57,
-          name: "Heart Lake",
-          PopupInfo: "",
-          lat: 44.269787000000065,
-          lng: -110.48675499999996,
-        },
-        {
-          OID: 58,
-          name: "Shoshone Lake",
-          PopupInfo: "",
-          lat: 44.37736600000005,
-          lng: -110.69343599999996,
-        },
-        {
-          OID: 59,
-          name: "Shoshone Lake Overlook",
-          PopupInfo: "View of the Grand Tetons",
-          lat: 44.44822700000003,
-          lng: -110.69217899999995,
-        },
-        {
-          OID: 60,
-          name: "Sedge Bay Picnic Area",
-          PopupInfo: "Favorite picnic area - view of the Grand Tetons",
-          lat: 44.51964300000003,
-          lng: -110.27834699999994,
-        },
-        {
-          OID: 61,
-          name: "Lake Butte Overlook",
-          PopupInfo: "View of the Grand Tetons and Lake Yellowstone",
-          lat: 44.510057000000074,
-          lng: -110.27512899999999,
-        },
-        {
-          OID: 62,
-          name: "Stevenson Island",
-          PopupInfo: "",
-          lat: 44.51603200000005,
-          lng: -110.38495999999998,
-        },
-        {
-          OID: 63,
-          name: "Dot Island",
-          PopupInfo: "",
-          lat: 44.45175700000004,
-          lng: -110.41009799999995,
-        },
-        {
-          OID: 64,
-          name: "Frank Island",
-          PopupInfo: "",
-          lat: 44.42519800000008,
-          lng: -110.36667699999998,
-        },
-        {
-          OID: 65,
-          name: "Lewis Falls",
-          PopupInfo: "",
-          lat: 44.26734900000008,
-          lng: -110.63708799999995,
-        },
-        {
-          OID: 66,
-          name: "Lewis Canyon",
-          PopupInfo: "",
-          lat: 44.19186700000006,
-          lng: -110.65532599999995,
-        },
-        {
-          OID: 67,
-          name: "Moose Falls",
-          PopupInfo: "",
-          lat: 44.15186700000004,
-          lng: -110.67272399999996,
-        },
-        {
-          OID: 68,
-          name: "Flagg Ranch",
-          PopupInfo: "Area",
-          lat: 44.10636900000003,
-          lng: -110.66764299999994,
-        },
-        {
-          OID: 69,
-          name: "Lewis Lake Campground",
-          PopupInfo: "",
-          lat: 44.280020000000036,
-          lng: -110.62747499999995,
-        },
-        {
-          OID: 70,
-          name: "Grant Village Area",
-          PopupInfo: "",
-          lat: 44.390217000000064,
-          lng: -110.55634199999997,
-        },
-        {
-          OID: 71,
-          name: "Grant Village Campground",
-          PopupInfo: "",
-          lat: 44.394435000000044,
-          lng: -110.56395899999995,
-        },
-        {
-          OID: 72,
-          name: "Bridge Bay Area",
-          PopupInfo: "",
-          lat: 44.53343300000006,
-          lng: -110.43785299999996,
-        },
-        {
-          OID: 73,
-          name: "Bridge Bay Campground",
-          PopupInfo: "",
-          lat: 44.53468000000004,
-          lng: -110.43694099999999,
-        },
-        {
-          OID: 74,
-          name: "Lake Village Area",
-          PopupInfo: "",
-          lat: 44.551855000000046,
-          lng: -110.39942199999996,
-        },
-        {
-          OID: 75,
-          name: "Fishing Bridge Area",
-          PopupInfo: "",
-          lat: 44.56479000000007,
-          lng: -110.37667699999997,
-        },
-        {
-          OID: 76,
-          name: "Fishing Bridge RV Park",
-          PopupInfo: "",
-          lat: 44.563657000000035,
-          lng: -110.36985399999998,
-        },
-        {
-          OID: 77,
-          name: "Fishing Bridge Visitor Center",
-          PopupInfo: "",
-          lat: 44.563015000000064,
-          lng: -110.37774999999999,
-        },
-        {
-          OID: 78,
-          name: "Indian Pond",
-          PopupInfo: "",
-          lat: 44.55830600000007,
-          lng: -110.32436399999995,
-        },
-        {
-          OID: 79,
-          name: "Canyon Visitors Center",
-          PopupInfo: "",
-          lat: 44.73470700000007,
-          lng: -110.49196299999994,
-        },
-        {
-          OID: 80,
-          name: "Canyon Village Area",
-          PopupInfo: "",
-          lat: 44.733888000000036,
-          lng: -110.49110599999995,
-        },
-        {
-          OID: 81,
-          name: "Canyon Campground",
-          PopupInfo: "",
-          lat: 44.73592600000006,
-          lng: -110.48871899999995,
-        },
-        {
-          OID: 82,
-          name: "Madison Campground",
-          PopupInfo: "",
-          lat: 44.64533000000006,
-          lng: -110.86138399999999,
-        },
-        {
-          OID: 83,
-          name: "Mammoth Campground",
-          PopupInfo: "",
-          lat: 44.973025000000064,
-          lng: -110.69352099999998,
-        },
+
         {
           OID: 84,
           name: "Roosevelt Arch",
@@ -701,28 +219,37 @@
           lat: 45.029536000000064,
           lng: -110.70880899999997,
         },
-        {
-          OID: 85,
-          name: "Swan Lake",
-          PopupInfo: "",
-          lat: 44.91935500000005,
-          lng: -110.73634999999996,
-        },
-        {
-          OID: 86,
-          name: "Upper Geyser Basin Overlook",
-          PopupInfo: "",
-          lat: 44.48701100000005,
-          lng: -110.86642499999999,
-        },
-        {
-          OID: 87,
-          name: "Observation Point",
-          PopupInfo: "",
-          lat: 44.46471100000008,
-          lng: -110.82445099999995,
-        },
       ];
+
+      function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 10,
+          center: { lat: 44.56978404051916, lng: -110.5744475 },
+        });
+        map.setMapTypeId("terrain");
+
+        const image = "marker.png";
+
+        for (let i = 0; i < locations.length; i++) {
+          const marker = new google.maps.Marker({
+            map,
+            position: {
+              lat: locations[i].lat,
+              lng: locations[i].lng,
+            },
+            animation: google.maps.Animation.DROP,
+            icon: image,
+          });
+
+          const infowindow = new google.maps.InfoWindow({
+            content:
+              `<h2>${locations[i].name}</h2>` + `${locations[i].PopupInfo}`,
+          });
+          marker.addListener("click", () => {
+            infowindow.open(map, marker);
+          });
+        }
+      }
     </script>
   </head>
   <body>

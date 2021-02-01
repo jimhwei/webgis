@@ -125,7 +125,7 @@
           });
           const infowindow = new google.maps.InfoWindow({
             content:
-              `<b>${locations[i].name}<b>` + ": " + locations[i].PopupInfo,
+              `<h2>${locations[i].name}</h2>` + `${locations[i].PopupInfo}`,
           });
           // attachSecretMessage(marker, secretMessages[i]);
           marker.addListener("click", () => {
