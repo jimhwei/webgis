@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="h-100">
   <head>
-    <title>Yellowstone National Park</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Honglin (Jim) Wei" />
+    <!-- Template design by Mark Otto, Jacob Thornton, and Bootstrap contributors -->
+    <meta name="generator" content="Hugo 0.79.0" />
+    <title>Yellowstone National Park Attractions Map</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
@@ -11,56 +17,48 @@
       defer
     ></script>
 
-    <!-- One single HTML5 page with embedded (not linked or inline) CSS.  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,900&display=swap"
-      rel="stylesheet"
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.0/examples/sticky-footer/"
     />
-    <style type="text/css">
-      h1 {
-        font-weight: 900;
-        font-size: 40px;
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
       }
 
-      p {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center, justify;
-        margin-bottom: 45px;
-        border-radius: 5px;
-        border: grey solid;
-        padding: 10px;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4 {
-        text-align: center;
-      }
-
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
       #map {
-        width: 90%;
+        width: 50%;
         height: 500px;
         margin: auto;
       }
 
-      /* Optional: Makes the sample page fill the window. */
-      /* No text aligns because it messes up the span inside of cluster markers */
-      html,
-      body {
-        /* text-align: center; */
-        /* height: 100%; */
-        margin: 0;
-        padding: 0;
-        font-family: "Roboto", sans-serif;
+      .container {
+        width: auto;
+        max-width: 680px;
+        padding: 0 15px;
       }
-      body {
-        background-color: #f5f5f5;
+      .mt-5 {
+        margin-bottom: 2.5rem;
+      }
+      .lead {
+        margin-top: 16px;
+      }
+      .footer {
+        margin-bottom: 0rem;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
       }
     </style>
     <script>
@@ -224,10 +222,11 @@
       function initMap() {
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 10,
-          center: { lat: 44.56978404051916, lng: -110.5744475 },
+          center: { lat: 44.54831605857752, lng: -110.6474433779618 },
         });
         map.setMapTypeId("terrain");
 
+        // Image rights ® Google LLC
         const image = "marker.png";
 
         for (let i = 0; i < locations.length; i++) {
@@ -247,33 +246,62 @@
           });
           marker.addListener("click", () => {
             infowindow.open(map, marker);
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+            // marker.addListener("click", toggleBounce);
+            // https://stackoverflow.com/questions/45507427/stop-marker-animation-in-google-maps-with-multiple-markers
           });
         }
       }
     </script>
   </head>
-  <body>
-    <section>
-      <h1>Yellowstone National Park Attractions Map</h1>
+  <body class="d-flex flex-column h-100">
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+      <div class="container">
+        <h1 class="mt-5">
+          Yellowstone National Park Attractions Map<img
+            src="./maps-icon.svg"
+            alt="Google Map icon"
+            height="36px"
+          />
+        </h1>
+      </div>
       <div id="map"></div>
-      <section>
-        <h2>About</h2>
+      <div class="container">
+        <p class="lead">About</p>
         <p>
           Yellowstone is the first park that started the national parks movement
           during President Ulysses S. Grant's administration. Known for its
-          stunning landscapes, hot springs and geysers, the park experiences
-          roughly over 4 million visitors per year. The above interactive map is
-          a collection of points of interests when visiting the national park.
-          See for yourself what your next adventure holds.
+          stunning landscapes, hot springs and geysers, the park attracts
+          roughly over 4 million visitors in a regular year. The above
+          interactive map is a collection of points of interests when visiting
+          the national park. Click on the icons to see what your next adventure
+          holds.
         </p>
-      </section>
-      <h4>
-        <a
-          class="footer"
-          href="https://jimhwei.github.io/webgis/gmaps/index.html"
-          >Return to Directory</a
+        <p>
+          This project was made possible using bootstrap and JavaScript. The
+          <a
+            href="https://www.google.com/maps/d/viewer?msa=0&mid=1rAokjMUGdAXyFCMhaz3mFwdimCQ&ll=44.56978404051916%2C-110.5744475&z=9"
+            >original link</a
+          >
+          came from an unknown user in the Google My Maps community. I was able
+          to get a copy of the GeoJSON file, modify it with ArcGIS Pro and
+          JavaScript back to JSON format for use in this website.
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container">
+        <span class="text-muted">
+          <p class="footer">Created by: Honglin (Jim) Wei</p>
+          <a
+            class="footer"
+            href="https://jimhwei.github.io/webgis/gmaps/index.html"
+            >Return to Directory</a
+          ></span
         >
-      </h4>
-    </section>
+      </div>
+    </footer>
   </body>
 </html>
