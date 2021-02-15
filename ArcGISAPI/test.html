@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -6,11 +5,8 @@
       name="viewport"
       content="initial-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <title>Bookmarks widget | Sample | ArcGIS API for JavaScript 4.18</title>
-    <link
-      rel="stylesheet"
-      href="https://js.arcgis.com/4.18/esri/themes/light/main.css"
-    />
+    <title>Romantic Places In Italy</title>
+
     <style>
       html,
       body,
@@ -21,14 +17,43 @@
         width: 100%;
       }
     </style>
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.18/esri/themes/light/main.css"
+    />
     <script src="https://js.arcgis.com/4.18/"></script>
+
     <script>
+      // All these require modules are later implemented into the functions parameters
       require([
+        "esri/config",
+        "esri/Map",
         "esri/WebMap",
         "esri/views/MapView",
         "esri/widgets/Bookmarks",
         "esri/widgets/Expand",
-      ], function (WebMap, MapView, Bookmarks, Expand) {
+        "esri/widgets/Locate",
+        "esri/Graphic",
+        "esri/layers/GraphicsLayer",
+      ], function (
+        esriConfig,
+        WebMap,
+        Map,
+        MapView,
+        Locate,
+        Bookmarks,
+        Expand,
+        Graphic,
+        GraphicsLayer
+      ) {
+        esriConfig.apiKey =
+          "AAPKb96f7173ec4d49699ecdb4487f5ccb8cJz0MHQG4rZQ62-Ob2nwdiqSYFMpmT_Cay3034mgjkstfW2X62UXYYP631SQFzcoI";
+
+        const map = new Map({
+          basemap: "arcgis-topographic", // Basemap layer service
+        });
+
         const webmap = new WebMap({
           portalItem: {
             // autocasts as new PortalItem()
@@ -36,11 +61,13 @@
           },
         });
 
+        // Italy
         const view = new MapView({
-          container: "viewDiv",
           map: webmap,
+          center: [12.5674, 41.8719], // Longitude, latitude
+          zoom: 6, // Zoom level
+          container: "viewDiv", // Div element
         });
-
         const bookmarks = new Bookmarks({
           view: view,
           // allows bookmarks to be added, edited, or deleted
@@ -56,14 +83,110 @@
         // Add the widget to the top-right corner of the view
         view.ui.add(bkExpand, "top-right");
 
-        // bonus - how many bookmarks in the webmap?
-        webmap.when(function () {
-          if (webmap.bookmarks && webmap.bookmarks.length) {
-            console.log("Bookmarks: ", webmap.bookmarks.length);
-          } else {
-            console.log("No bookmarks in this webmap.");
-          }
+        const locate = new Locate({
+          view: view,
+          useHeadingEnabled: false,
+          goToOverride: function (view, options) {
+            options.target.scale = 1500;
+            return view.goTo(options.target);
+          },
         });
+        view.ui.add(locate, "top-left");
+
+        // A graphics layer is a container for graphics. It is used with a map view to display graphics on a map. You can add more than one graphics layer to a map view. Graphics layers are displayed on top of all other layers.
+        const graphicsLayer = new GraphicsLayer();
+        map.add(graphicsLayer);
+
+        const point = {
+          //Create a point
+          type: "point",
+          longitude: -118.80657463861,
+          latitude: 34.0005930608889,
+        };
+
+        const simpleMarkerSymbol = {
+          type: "simple-marker",
+          color: [226, 119, 40], // Orange
+          outline: {
+            color: [255, 255, 255], // White
+            width: 1,
+          },
+        };
+
+        const pointGraphic = new Graphic({
+          geometry: point,
+          symbol: simpleMarkerSymbol,
+        });
+        graphicsLayer.add(pointGraphic);
+
+        const polyline = {
+          type: "polyline",
+          //Longitude, latitude
+          paths: [
+            [14.6029, 40.6333], //Almafi Coast
+            [14.2222, 40.5532], //Capri
+            [12.4964, 41.9028], //Rome
+            [11.2558, 43.7696], //Florence
+            [12.3155, 45.4408], //Venice
+            [9.2572, 46.016], // Lake Como
+            [9.19, 45.4642], // Milan
+            [7.6867, 45.0703], // Turin
+          ],
+        };
+        const simpleLineSymbol = {
+          type: "simple-line",
+          join: "round",
+          style: "short-dot",
+          color: "#d1616b", // Orange
+          width: 2,
+        };
+
+        const polylineGraphic = new Graphic({
+          geometry: polyline,
+          symbol: simpleLineSymbol,
+        });
+        graphicsLayer.add(polylineGraphic);
+
+        // Create a polygon geometry
+        const polygon = {
+          type: "polygon",
+          rings: [
+            [-118.818984489994, 34.0137559967283], //Longitude, latitude
+            [-118.806796597377, 34.0215816298725], //Longitude, latitude
+            [-118.791432890735, 34.0163883241613], //Longitude, latitude
+            [-118.79596686535, 34.008564864635], //Longitude, latitude
+            [-118.808558110679, 34.0035027131376], //Longitude, latitude
+          ],
+        };
+
+        const simpleFillSymbol = {
+          type: "simple-fill",
+          color: [227, 139, 79, 0.8], // Orange, opacity 80%
+          outline: {
+            color: [255, 255, 255],
+            width: 1,
+          },
+        };
+
+        const popupTemplate = {
+          title: "{Name}",
+          content: "{Description}",
+        };
+
+        const attributes = {
+          Name: "Graphic",
+          Description: "Impressive, you have found the hidden message",
+        };
+
+        // constants must be assigned before referenced
+        const polygonGraphic = new Graphic({
+          geometry: polygon,
+          symbol: simpleFillSymbol,
+          // This allows for popups to happen in the polygonGraphic
+          attributes: attributes,
+          popupTemplate: popupTemplate,
+        });
+        graphicsLayer.add(polygonGraphic);
       });
     </script>
   </head>

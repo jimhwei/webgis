@@ -29,13 +29,20 @@
       require([
         "esri/config",
         "esri/Map",
-        "esri/WebMap",
-
         "esri/views/MapView",
         "esri/widgets/Locate",
         "esri/Graphic",
         "esri/layers/GraphicsLayer",
-      ], function (esriConfig, Map, MapView, Locate, Graphic, GraphicsLayer) {
+        "esri/geometry/Multipoint",
+      ], function (
+        esriConfig,
+        Map,
+        MapView,
+        Locate,
+        Graphic,
+        GraphicsLayer,
+        Multipoint
+      ) {
         esriConfig.apiKey =
           "AAPKb96f7173ec4d49699ecdb4487f5ccb8cJz0MHQG4rZQ62-Ob2nwdiqSYFMpmT_Cay3034mgjkstfW2X62UXYYP631SQFzcoI";
 
@@ -68,22 +75,43 @@
         const point = {
           //Create a point
           type: "point",
-          longitude: -118.80657463861,
-          latitude: 34.0005930608889,
+          longitude: 14.6029,
+          latitude: 40.6333,
         };
+
+        // var mpJson = {
+        //   points: [
+        //     [14.6029, 40.6333], //Amalfi Coast
+        //     [14.2222, 40.5532], //Capri
+        //     [12.4964, 41.9028],
+        //   ],
+        //   spatialReference: { " wkid": 4326 },
+        // };
+        // var multipoint = new Multipoint(mpJson);
 
         const simpleMarkerSymbol = {
           type: "simple-marker",
-          color: [226, 119, 40], // Orange
+          color: "#d1616b", // Red
           outline: {
             color: [255, 255, 255], // White
             width: 1,
           },
         };
 
+        const popupTemplatePoint = {
+          title: "{name}",
+          content: "{Message}",
+        };
+        const attributesPoint = {
+          name: "Welcome to Jim's Valentines Tour",
+          Message: "Your trip starts here at Amalfi Coast and ends at Turin!",
+        };
+
         const pointGraphic = new Graphic({
           geometry: point,
           symbol: simpleMarkerSymbol,
+          attributes: attributesPoint,
+          popupTemplate: popupTemplatePoint,
         });
         graphicsLayer.add(pointGraphic);
 
@@ -91,7 +119,7 @@
           type: "polyline",
           //Longitude, latitude
           paths: [
-            [14.6029, 40.6333], //Almafi Coast
+            [14.6029, 40.6333], //Amalfi Coast
             [14.2222, 40.5532], //Capri
             [12.4964, 41.9028], //Rome
             [11.2558, 43.7696], //Florence
@@ -105,56 +133,112 @@
           type: "simple-line",
           join: "round",
           style: "short-dot",
-          color: "#d1616b", // Orange
+          color: "#d1616b", // A nice red for itinerary
           width: 2,
         };
 
-        const polylineGraphic = new Graphic({
+        // Create an object for storing attributes related to the line
+        var lineAtt = {
+          Name: "Italy Trip Itinerary",
+          Guide: "Jim",
+          "Destination 1": "Amalfi Coast",
+          "Destination 2": "Capri",
+          "Destination 3": "Rome",
+          "Destination 4": "Florence",
+          "Destination 5": "Venice",
+          "Destination 6": "Lake Como",
+          "Destination 7": "Milan",
+          "Destination 8": "Turin",
+        };
+
+        var polylineGraphic = new Graphic({
           geometry: polyline,
           symbol: simpleLineSymbol,
+          attributes: lineAtt,
+          popupTemplate: {
+            // autocasts as new PopupTemplate()
+            title: "{Name}",
+            content: [
+              {
+                type: "fields",
+                fieldInfos: [
+                  {
+                    fieldName: "Name",
+                  },
+                  {
+                    fieldName: "Guide",
+                  },
+                  {
+                    fieldName: "Destination 1",
+                  },
+                  {
+                    fieldName: "Destination 2",
+                  },
+                  {
+                    fieldName: "Destination 3",
+                  },
+                  {
+                    fieldName: "Destination 4",
+                  },
+                  {
+                    fieldName: "Destination 5",
+                  },
+                  {
+                    fieldName: "Destination 6",
+                  },
+                  {
+                    fieldName: "Destination 7",
+                  },
+                  {
+                    fieldName: "Destination 8",
+                  },
+                ],
+              },
+            ],
+          },
         });
         graphicsLayer.add(polylineGraphic);
 
-        // Create a polygon geometry
-        const polygon = {
-          type: "polygon",
-          rings: [
-            [-118.818984489994, 34.0137559967283], //Longitude, latitude
-            [-118.806796597377, 34.0215816298725], //Longitude, latitude
-            [-118.791432890735, 34.0163883241613], //Longitude, latitude
-            [-118.79596686535, 34.008564864635], //Longitude, latitude
-            [-118.808558110679, 34.0035027131376], //Longitude, latitude
-          ],
-        };
+        // // Create a polygon geometry
+        // const polygon = {
+        //   type: "polygon",
+        //   rings: [
+        //     [-118.818984489994, 34.0137559967283], //Longitude, latitude
+        //     [-118.806796597377, 34.0215816298725], //Longitude, latitude
+        //     [-118.791432890735, 34.0163883241613], //Longitude, latitude
+        //     [-118.79596686535, 34.008564864635], //Longitude, latitude
+        //     [-118.808558110679, 34.0035027131376], //Longitude, latitude
+        //   ],
+        // };
 
-        const simpleFillSymbol = {
-          type: "simple-fill",
-          color: [227, 139, 79, 0.8], // Orange, opacity 80%
-          outline: {
-            color: [255, 255, 255],
-            width: 1,
-          },
-        };
+        // const simpleFillSymbol = {
+        //   type: "simple-fill",
+        //   color: [227, 139, 79, 0.8], // Orange, opacity 80%
+        //   outline: {
+        //     color: [255, 255, 255],
+        //     width: 1,
+        //   },
+        // };
 
-        const popupTemplate = {
-          title: "{Name}",
-          content: "{Description}",
-        };
+        // const popupTemplate = {
+        //   title: "{Name}",
+        //   content: "{Description}",
+        // };
 
-        const attributes = {
-          Name: "Graphic",
-          Description: "Impressive, you have found the hidden message",
-        };
+        // const attributes = {
+        //   Name: "Graphic",
+        //   Description: "Impressive, you have found the hidden message",
+        // };
 
-        // constants must be assigned before referenced
-        const polygonGraphic = new Graphic({
-          geometry: polygon,
-          symbol: simpleFillSymbol,
-          // This allows for popups to happen in the polygonGraphic
-          attributes: attributes,
-          popupTemplate: popupTemplate,
-        });
-        graphicsLayer.add(polygonGraphic);
+        // // constants must be assigned before referenced
+        // const polygonGraphic = new Graphic({
+        //   geometry: polygon,
+        //   symbol: simpleFillSymbol,
+        //   // This allows for popups to happen in the polygonGraphic
+        //   attributes: attributes,
+        //   popupTemplate: popupTemplate,
+        // });
+        // graphicsLayer.add(polygonGraphic);
       });
     </script>
   </head>
