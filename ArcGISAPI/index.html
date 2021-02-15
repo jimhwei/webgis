@@ -5,6 +5,12 @@
       name="viewport"
       content="initial-scale=1, maximum-scale=1, user-scalable=no"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <title>Romantic Places In Italy</title>
 
     <style>
@@ -13,8 +19,15 @@
       #viewDiv {
         padding: 0;
         margin: 0;
-        height: 100%;
+        height: 90%;
         width: 100%;
+      }
+
+      p {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        margin-bottom: 0px;
       }
     </style>
 
@@ -53,7 +66,7 @@
         // Italy
         const view = new MapView({
           map: map,
-          center: [12.5674, 41.8719], // Longitude, latitude
+          center: [12.5674, 42.5], // Longitude, latitude
           zoom: 6, // Zoom level
           container: "viewDiv", // Div element
         });
@@ -79,6 +92,7 @@
           latitude: 40.6333,
         };
 
+        // How do I get multi points?
         // var mpJson = {
         //   points: [
         //     [14.6029, 40.6333], //Amalfi Coast
@@ -243,6 +257,54 @@
     </script>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Valentines Trip in Italy</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./webmap.html">Webmap API</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div id="viewDiv"></div>
+    <p>
+      With Valentines around the corner, what other place better to visit than
+      Italy? Italy is one of the most romantic places to go with your loved ones
+      for an unforgettable experience. The mediterranean country is rich with
+      culture and filled with jaw-dropping scenary. I have based my ArcGIS
+      JavaScript API map from
+      <a
+        href="http://www.silverspoonlondon.co.uk/2018/08/the-eight-most-romantic-places-in-italy.html"
+        target="blank"
+      >
+        Silverspoon's Article</a
+      >
+      and plotted the tour on a map.
+    </p>
+    <p>
+      Of course, not everyone has the time to see all Italy have to offer. Click
+      on the
+      <b>start point</b> and <b>dotted trip line</b> for more information and
+      customize your trip! To see detailed maps of the itinerary, be sure to
+      check out the <a href="./webmap.html">Webmap version</a>.
+      <i>Buon viaggio!</i>
+    </p>
   </body>
 </html>
