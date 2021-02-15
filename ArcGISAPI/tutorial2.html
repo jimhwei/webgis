@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>ArcGIS API for JavaScript Tutorials: Display Your Location</title>
+    <!-- https://developers.arcgis.com/javascript/latest/display-your-location/ -->
+
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.18/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.18/"></script>
+
+    <script>
+      require([
+        "esri/config",
+        "esri/Map",
+        "esri/views/MapView",
+        "esri/widgets/Locate",
+      ], function (esriConfig, Map, MapView, Locate) {
+        //   Locate function required for getting location
+        esriConfig.apiKey =
+          "AAPKb96f7173ec4d49699ecdb4487f5ccb8cJz0MHQG4rZQ62-Ob2nwdiqSYFMpmT_Cay3034mgjkstfW2X62UXYYP631SQFzcoI";
+        const map = new Map({
+          basemap: "arcgis-navigation", // This base map is optimized for navigation.
+        });
+
+        // Point Pelee
+        const view = new MapView({
+          map: map,
+          center: [-82.5262199, 41.9631979], // Longitude, latitude
+          zoom: 13, // Zoom level
+          container: "viewDiv", // Div element
+        });
+
+        const locate = new Locate({
+          view: view,
+          useHeadingEnabled: false,
+          goToOverride: function (view, options) {
+            options.target.scale = 1500;
+            return view.goTo(options.target);
+          },
+        });
+        view.ui.add(locate, "top-left");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="viewDiv"></div>
+  </body>
+</html>
