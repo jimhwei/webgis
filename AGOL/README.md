@@ -8,8 +8,14 @@ Item Page:
 
 > https://fleming.maps.arcgis.com/home/item.html?id=5894443191d74d26b7d4e6fd937c1ba2
 
-REST Endpoint:
+## REST Endpoint:
 
 > https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/tree_collection_database_hosted_feature_layer/FeatureServer
 
 ![title](./imgs/rest.png)
+
+## Tree Hosted Feature Layer:
+
+> https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/tree_collection_database_hosted_feature_layer/FeatureServer/layers
+
+![title](./imgs/TreeLayer.jpg)
