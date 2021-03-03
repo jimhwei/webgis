@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -12,97 +11,232 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <title>Canada</title>
-    <link
-      rel="stylesheet"
-      href="https://js.arcgis.com/4.18/esri/themes/light/main.css"
-    />
+    <title>Canadian Geography For Kids</title>
+
     <style>
       html,
       body,
       #viewDiv {
         padding: 0;
         margin: 0;
-        height: 100%;
+        height: 90%;
         width: 100%;
       }
+
+      p {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        margin-bottom: 0px;
+      }
+
+      a.navbar-brand {
+        font-size: 32px;
+      }
+
+      figure {
+        margin-top: 2em;
+      }
+
+      @media only screen and (min-width: 800px) {
+        div.content {
+          max-width: 1080px;
+          margin: 0 auto !important;
+          float: none !important;
+        }
+
+        #viewDiv {
+          max-width: 90%;
+          /* display: block; */
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        figure.figure-general {
+          margin-left: 6em;
+          margin-right: auto;
+        }
+      }
     </style>
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.18/esri/themes/light/main.css"
+    />
     <script src="https://js.arcgis.com/4.18/"></script>
+
     <script>
       require([
-        "esri/WebMap",
+        "esri/Map",
         "esri/views/MapView",
-        "esri/widgets/Bookmarks",
-        "esri/widgets/Expand",
-        "esri/config",
-        "esri/Graphic",
-        "esri/layers/GraphicsLayer",
-      ], function (WebMap, MapView, Bookmarks, Expand) {
-        const webmap = new WebMap({
-          portalItem: {
-            // autocasts as new PortalItem()
-            id: "301a9ac7ea804278a6e0092c500b8dbb",
+        "esri/layers/FeatureLayer",
+        "esri/widgets/Search",
+        "esri/widgets/Legend",
+      ], function (Map, MapView, FeatureLayer, Search, Legend) {
+        var map = new Map({
+          basemap: "gray",
+        });
+
+        // Using map view module to display instead of WebMap
+        var view = new MapView({
+          container: "viewDiv",
+          map: map,
+
+          // Extent changed as a result of reprojection to CRS Lambert to Web Merc
+          // Used http://bboxfinder.com to find extent
+          extent: {
+            // autocasts as new Extent()
+            xmin: -15000000,
+            ymin: 5800000,
+            xmax: -6000000,
+            ymax: 9000000,
+            spatialReference: 102100, // Web mercator
           },
         });
 
-        const view = new MapView({
-          container: "viewDiv",
-          map: webmap,
+        // Adds the search widget to the top right corner of the view
+        view.ui.add(new Search({ view: view }), "top-right");
+
+        // Despite not having a legend in web map view, this turned out okay
+        view.ui.add(new Legend({ view: view }), "bottom-right");
+
+        const labelClass = {
+          // autocasts as new LabelClass()
+          symbol: {
+            type: "text", // autocasts as new TextSymbol()
+            color: "#241e1e",
+            font: {
+              // autocast as new Font()
+              family: "Merriweather",
+              size: 12,
+              weight: "bold",
+            },
+          },
+          labelPlacement: "above-center",
+          labelExpressionInfo: {
+            expression: "$feature.PRNAME",
+          },
+        };
+
+        /********************
+         * Add popup templates
+         ********************/
+
+        var cityTemplate = {
+          // TERM and PROV are fields in the service containing the cities
+          // I want to use Arcade to link these two together, i wonder if that's possible
+          // https://www.arcgis.com/apps/Cascade/index.html?appid=1c225c84ba234487b7e9a9180465fd58
+          title: "{TERM} in {PROV}",
+          content: [
+            {
+              type: "fields",
+              fieldInfos: [
+                {
+                  fieldName: "NAME",
+                  label: "Name",
+                },
+                // {
+                //   fieldName: "PROV",
+                //   label: "Province Abreviation",
+                // },
+              ],
+            },
+          ],
+        };
+
+        /********************
+         * Add feature layer
+         ********************/
+
+        // Adding Canada Maps from Luna
+        var featureLayer = new FeatureLayer({
+          url:
+            "https://luna.flemingcollege.ca/arcgis/rest/services/Geom99lab1/HoweCanada/MapServer/0",
+          labelingInfo: [labelClass],
         });
 
-        const bookmarks = new Bookmarks({
-          view: view,
-          // allows bookmarks to be added, edited, or deleted
-          editingEnabled: true,
+        // Adding Canadian Cities from ESRI Canada Edcuation
+        var canadianCities = new FeatureLayer({
+          url:
+            "https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/2CanadaMajCities/FeatureServer/0",
+          popupTemplate: cityTemplate,
         });
 
-        const bkExpand = new Expand({
-          view: view,
-          content: bookmarks,
-          expanded: true,
-        });
-
-        // Add the widget to the top-right corner of the view
-        view.ui.add(bkExpand, "top-right");
-
-        // bonus - how many bookmarks in the webmap?
-        webmap.when(function () {
-          if (webmap.bookmarks && webmap.bookmarks.length) {
-            console.log("Bookmarks: ", webmap.bookmarks.length);
-          } else {
-            console.log("No bookmarks in this webmap.");
-          }
-        });
+        map.add(featureLayer);
+        map.add(canadianCities);
       });
     </script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Valentines Trip in Italy</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="./index.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./webmap.html">Webmap API</a>
-          </li>
-        </ul>
-      </div>
+      <a class="navbar-brand" href="#">Do You Know Your Canadian Geography?</a>
     </nav>
+
     <div id="viewDiv"></div>
+
+    <div class="content">
+      <p>
+        10 Provinces, 3 territories, 2 official languages, <b>one country</b>.
+      </p>
+      <p>
+        Oh Canada, the land in this country is vast and rugged. From north to
+        south Canada spans more than half of the Northern Hemisphere. 3
+        different mountain ranges in the Rockies, Coast and Laurentian and
+        nearly
+        <i>10 million</i> square kilometers, if that is not enough for you to
+        explore, there's always the St. Lawrence and Mackenzie river to dip your
+        paddle in
+      </p>
+
+      <figure class="figure-general">
+        <img
+          src="imgs/popup.JPG"
+          class="figure-img img-fluid rounded"
+          alt="ESRI Popup"
+        />
+        <figcaption class="figure-caption">
+          Click on each city on the map to find out its name.
+        </figcaption>
+      </figure>
+
+      <p>
+        From east to west, Canada stretches over 7500 kilometers crossing
+        <i>6 time zones</i>. It is the second largest country in the world by
+        land mass, but it is only half of one percent of the entire world's
+        population with 38 million people.
+      </p>
+
+      <figure class="figure-general">
+        <img
+          src="imgs/ottawa.jpg"
+          class="figure-img img-fluid rounded"
+          alt="Ottawa Parliment"
+        />
+        <figcaption class="figure-caption">
+          Parliment in Ottawa. Photo by Sergey Pesterev.
+        </figcaption>
+      </figure>
+
+      <p>
+        Canadians can speak <i>deux langues officielles</i> in English and
+        French. The federal parlimentary state is this country's form of
+        government, with the parliment residing in Ottawa — the nation's
+        capital. Canadians use the Canadian dollar and like to chase after
+        little black rubber discs on ice with sticks. Make sure to keep an eye
+        out for beavers and moose (not meese) if you like spending time in the
+        great outdoors.
+      </p>
+
+      <figure class="figure">
+        <img
+          src="imgs/NPSquare.jpg"
+          class="figure-img img-fluid rounded"
+          alt="Nathan Philips Square"
+        />
+        <figcaption class="figure-caption">
+          Nathan Philips Square, Photo by City of Toronto.
+        </figcaption>
+      </figure>
+    </div>
   </body>
 </html>

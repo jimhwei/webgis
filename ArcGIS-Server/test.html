@@ -82,27 +82,11 @@
          * Add popup templates
          ********************/
 
-        var provinceTemplate = {
-          // NAME and COUNTY are fields in the service containing the Census Tract (NAME) and county of the feature
-          title: "Province",
-          //"{NAME} in {COUNTY}",
-          content: [
-            {
-              type: "fields",
-              fieldInfos: [
-                {
-                  fieldName: "PRENAME",
-                  label: "Name",
-                },
-              ],
-            },
-          ],
-        };
-
         var cityTemplate = {
-          // NAME and COUNTY are fields in the service containing the Census Tract (NAME) and county of the feature
-          title: "City",
-          //"{NAME} in {COUNTY}",
+          // TERM and PROV are fields in the service containing the cities
+          // I want to use Arcade to link these two together, i wonder if that's possible
+          // https://www.arcgis.com/apps/Cascade/index.html?appid=1c225c84ba234487b7e9a9180465fd58
+          title: "{TERM} in {PROV}",
           content: [
             {
               type: "fields",
@@ -111,10 +95,10 @@
                   fieldName: "NAME",
                   label: "Name",
                 },
-                {
-                  fieldName: "PROV",
-                  label: "Province",
-                },
+                // {
+                //   fieldName: "PROV",
+                //   label: "Province Abreviation",
+                // },
               ],
             },
           ],
@@ -128,7 +112,6 @@
         var featureLayer = new FeatureLayer({
           url:
             "https://luna.flemingcollege.ca/arcgis/rest/services/Geom99lab1/HoweCanada/MapServer/0",
-          // popupTemplate: provinceTemplate,
           labelingInfo: [labelClass],
         });
 
