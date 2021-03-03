@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <title>Canadian Geography For Kids</title>
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.18/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.18/"></script>
+
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+
+    <script>
+      require([
+        "esri/Map",
+        "esri/views/MapView",
+        "esri/layers/FeatureLayer",
+        "esri/widgets/Search",
+        "esri/widgets/Legend",
+      ], function (Map, MapView, FeatureLayer, Search, Legend) {
+        var map = new Map({
+          basemap: "gray",
+        });
+
+        // Using map view module to display instead of WebMap
+        var view = new MapView({
+          container: "viewDiv",
+          map: map,
+
+          // Extent changed as a result of reprojection to CRS Lambert to Web Merc
+          // Used http://bboxfinder.com to find extent
+          extent: {
+            // autocasts as new Extent()
+            xmin: -15000000,
+            ymin: 5500000,
+            xmax: -6000000,
+            ymax: 9200000,
+            spatialReference: 102100, // Web mercator
+          },
+        });
+
+        // Adds the search widget to the top right corner of the view
+        view.ui.add(new Search({ view: view }), "top-right");
+
+        // Despite not having a legend in web map view, this turned out okay
+        view.ui.add(new Legend({ view: view }), "bottom-right");
+
+        const labelClass = {
+          // autocasts as new LabelClass()
+          symbol: {
+            type: "text", // autocasts as new TextSymbol()
+            color: "#241e1e",
+            font: {
+              // autocast as new Font()
+              family: "Merriweather",
+              size: 12,
+              weight: "bold",
+            },
+          },
+          labelPlacement: "above-center",
+          labelExpressionInfo: {
+            expression: "$feature.PRNAME",
+          },
+        };
+
+        /********************
+         * Add popup templates
+         ********************/
+
+        var provinceTemplate = {
+          // NAME and COUNTY are fields in the service containing the Census Tract (NAME) and county of the feature
+          title: "Province",
+          //"{NAME} in {COUNTY}",
+          content: [
+            {
+              type: "fields",
+              fieldInfos: [
+                {
+                  fieldName: "PRENAME",
+                  label: "Name",
+                },
+              ],
+            },
+          ],
+        };
+
+        var cityTemplate = {
+          // NAME and COUNTY are fields in the service containing the Census Tract (NAME) and county of the feature
+          title: "City",
+          //"{NAME} in {COUNTY}",
+          content: [
+            {
+              type: "fields",
+              fieldInfos: [
+                {
+                  fieldName: "NAME",
+                  label: "Name",
+                },
+                {
+                  fieldName: "PROV",
+                  label: "Province",
+                },
+              ],
+            },
+          ],
+        };
+
+        /********************
+         * Add feature layer
+         ********************/
+
+        // Adding Canada Maps from Luna
+        var featureLayer = new FeatureLayer({
+          url:
+            "https://luna.flemingcollege.ca/arcgis/rest/services/Geom99lab1/HoweCanada/MapServer/0",
+          // popupTemplate: provinceTemplate,
+          labelingInfo: [labelClass],
+        });
+
+        // Adding Canadian Cities from ESRI Canada Edcuation
+        var canadianCities = new FeatureLayer({
+          url:
+            "https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/2CanadaMajCities/FeatureServer/0",
+          popupTemplate: cityTemplate,
+        });
+
+        map.add(featureLayer);
+        map.add(canadianCities);
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="viewDiv"></div>
+  </body>
+</html>
