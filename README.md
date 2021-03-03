@@ -9,6 +9,6 @@ Here's a link to the Gmaps **[directory!](https://jimhwei.github.io/webgis//gmap
 
 Link to the **[Google Maps Repository Folder](https://github.com/jimhwei/webgis/tree/master/gmaps)**
 
-# ArcGIS Server Canadian Geography Map
+# ArcGIS Server
 
 [Do You Know Your Canadian Geography?](https://jimhwei.github.io/webgis/ArcGIS-Server)
